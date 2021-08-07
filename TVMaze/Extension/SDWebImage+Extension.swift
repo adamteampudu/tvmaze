@@ -1,14 +1,17 @@
 //
-//  SDWebImage+Extension.swift
-//  TVMaze
+//  UIImageViewExtension.swift
 //
-//  Created by Adam Teale on 04-08-21.
+//  Created by Nicolás García on 02/03/2021.
 //
 
 import UIKit
 import SDWebImage
 
 extension UIImageView {
+
+    enum Style {
+        case networking
+    }
 
     func setImage(from URL: URL) {
         self.sd_setImage(with: URL,
@@ -17,4 +20,11 @@ extension UIImageView {
                          completed: nil)
     }
 
+    func set(style: Style) {
+        switch style {
+        case .networking:
+            sd_imageIndicator = SDWebImageActivityIndicator.gray
+            sd_imageTransition = SDWebImageTransition.fade
+        }
+    }
 }

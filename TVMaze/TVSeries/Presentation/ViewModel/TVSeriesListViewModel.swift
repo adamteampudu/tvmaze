@@ -10,18 +10,30 @@ import RxSwift
 
 final class TVSeriesListViewModel: BaseViewModel {
 
-    private(set) var tvSeries: [UiShow] = []
+    var reloadTVSeriesPublishObservable: Observable<Void?> {
+        reloadTVSeriesPublishSubject
+    }
+
+    var currentSearchTerm: String?
 
     private let reloadTVSeriesPublishSubject = PublishSubject<Void?>()
+
+    private var shows: [UiShow] = []
+
+    var filteredShows: [UiShow] {
+        if let searchText = currentSearchTerm, !searchText.isEmpty {
+            return shows.filter({ show in
+                show.name.contains(searchText)
+            })
+        } else {
+            return shows
+        }
+    }
 
     private let getTVSeriesUseCase: GetShowsUseCase.Alias
 
     init(getTVSeriesUseCase: GetShowsUseCase.Alias) {
         self.getTVSeriesUseCase = getTVSeriesUseCase
-    }
-
-    var reloadTVSeriesPublishObservable: Observable<Void?> {
-        reloadTVSeriesPublishSubject
     }
 
     func onViewDidLoad() {
@@ -31,7 +43,7 @@ final class TVSeriesListViewModel: BaseViewModel {
             self.isLoadingSubject.onNext(false)
             switch getMoviesResult {
             case .success(data: let moviesList):
-                self.tvSeries = moviesList
+                self.shows = moviesList
                 self.reloadTVSeriesPublishSubject.onNext(())
             case .error(error: let errorType):
                 self.onError(errorType)
@@ -40,6 +52,11 @@ final class TVSeriesListViewModel: BaseViewModel {
     }
 
     func onSelection(row: Int) {
-        debugPrint(tvSeries[row])
+        debugPrint(shows[row])
+    }
+
+    func filterResults(text: String?) {
+        currentSearchTerm = text
+        self.reloadTVSeriesPublishSubject.onNext(())
     }
 }

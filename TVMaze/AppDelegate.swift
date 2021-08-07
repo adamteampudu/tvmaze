@@ -18,12 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = window else { return true }
+        window.tintColor = Asset.Colors.primary.color
         window.rootViewController = Injection.shared.getNavigationController()
         window.makeKeyAndVisible()
 
         return true
     }
 
-
 }
-

@@ -10,24 +10,20 @@ import UIKit
 final class TVSeriesListTableViewCell: BaseTableViewCell {
 
     @IBOutlet private var nameLabel: UILabel!
-    @IBOutlet private var iconView: UIImageView!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-
-    }
+    @IBOutlet private var posterView: UIImageView!
 
     func setup(with tvSeries: UiShow) {
         if let imageUrlString = tvSeries.image?.medium,
            let imageUrl = URL(string: imageUrlString) {
-            iconView.setImage(from: imageUrl)
+            posterView.set(style: .networking)
+            posterView.setImage(from: imageUrl)
         }
         nameLabel.text = tvSeries.name
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        iconView.image = nil
+        posterView.image = nil
         nameLabel.attributedText = nil
     }
 }

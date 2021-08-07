@@ -18,6 +18,8 @@ internal enum L10n {
   internal static let rateYourFavourites = L10n.tr("Localizable", "rate_your_favourites")
   /// Search for your favourite actors
   internal static let searchForYourFavouriteActors = L10n.tr("Localizable", "search_for_your_favourite_actors")
+  /// Shows
+  internal static let shows = L10n.tr("Localizable", "shows")
   /// Welcome
   internal static let welcome = L10n.tr("Localizable", "welcome")
 }
