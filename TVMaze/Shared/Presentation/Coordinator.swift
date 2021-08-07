@@ -2,7 +2,7 @@
 //  Coordinator.swift
 //  TVMaze
 //
-//  Created by Adam Teale on 04-08-21.
+//  Created by Daniel Santamaria on 10/5/20.
 //
 
 import Foundation
@@ -11,6 +11,13 @@ import Swinject
 class Coordinator {
 
     private let container: Container
+
+    private static let noArguments = 0
+    private static let oneArgument = 1
+    private static let twoArguments = 2
+
+    private static let firstArgument = 0
+    private static let secondArgument = 1
 
     init(container: Container) {
         self.container = container
@@ -22,22 +29,19 @@ class Coordinator {
 
     func resolve<V: UIViewController, T>(type: V.Type,
                                          with args: [T]) -> V {
-        return container.resolve(V.self,
-                                 arguments: args,
-                                 args)!
-//        switch args.count {
-//        case Coordinator.noArguments:
-//            return container.resolve(V.self)!
-//        case Coordinator.oneArgument:
-//            return container.resolve(V.self,
-//                                     argument: args[Self.firstArgument])!
-//        case Coordinator.twoArguments:
-//            return container.resolve(V.self,
-//                                     arguments: args[Self.firstArgument],
-//                                     args[Self.secondArgument])!
-//        default:
-//            fatalError("Unsupported number of arguments (max. 2)")
-//        }
+        switch args.count {
+        case Coordinator.noArguments:
+            return container.resolve(V.self)!
+        case Coordinator.oneArgument:
+            return container.resolve(V.self,
+                                     argument: args[Self.firstArgument])!
+        case Coordinator.twoArguments:
+            return container.resolve(V.self,
+                                     arguments: args[Self.firstArgument],
+                                     args[Self.secondArgument])!
+        default:
+            fatalError("Unsupported number of arguments (max. 2)")
+        }
     }
 
     func popViewController(viewController: UIViewController, animated: Bool) {

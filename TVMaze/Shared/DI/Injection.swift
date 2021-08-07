@@ -23,7 +23,7 @@ final class Injection {
     private func injectDependencies() {
         mainModule.inject()
         NetworkModule(container).inject()
-        TVSeriesModule(container).inject()
+        ShowsModule(container).inject()
         WelcomeModule(container).inject()
         mainModule.inject()
     }

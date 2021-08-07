@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum ServerConstants {
 
     static let rateLimitError = 429
@@ -18,6 +17,7 @@ enum ServerConstants {
         private static let basePath = "shows"
         static let shows = "\(basePath)"
         static let showsPaginated = "\(basePath)?page=/%@"
+        static let showSeasons = "\(basePath)/%@/episodes"
     }
 
 }

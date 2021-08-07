@@ -61,6 +61,16 @@ final class NetworkSessionImpl: NetworkSession {
         ).validate(statusCode: Constants.successStatusCodes)
         .responseJSON { [weak self] response in
             guard let self = self else { return }
+
+            //TODO
+            if let data = response.data {
+                if let response = String(data: data, encoding: String.Encoding.utf8) {
+                    debugPrint("request url", url)
+                    debugPrint(response)
+                }
+            }
+
+            
             switch response.result {
             case .success:
                 self.onSuccess(response.data, onCompletion)
