@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.2.2)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SwiftGen (6.4.0)
+  - SwiftLint (0.40.2)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (= 5.2.2)
+  - RxCocoa (= 6.1.0)
+  - RxSwift (= 6.1.0)
+  - SDWebImage (~> 5.0)
+  - SwiftGen (~> 6.0)
+  - SwiftLint (= 0.40.2)
+  - Swinject (= 2.7.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SwiftGen
+    - SwiftLint
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLint: 1216c910d27c2633ade33b4f071bb6b930982e62
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: fe03da80842dde9a4fad14708d48ee68ae0a854a
+
+COCOAPODS: 1.10.0

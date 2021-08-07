@@ -1,0 +1,13 @@
+/*
+  Localizable.strings
+  TVMaze
+
+  Created by Adam Teale on 04-08-21.
+
+*/
+
+"welcome" = "Welcome";
+"search_for_your_favourite_actors" = "Search for your favourite actors";
+"create_your_watchlist" = "Create your watchlist";
+"rate_your_favourites" = "Rate your favourites";
+"continue" = "Continue";

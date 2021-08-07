@@ -1,0 +1,16 @@
+disabled_rules:
+  - identifier_name
+  - shorthand_operator
+  - type_body_length
+  - cyclomatic_complexity
+  - force_try
+  - force_cast
+  - nesting
+  - empty_enum_arguments
+  - function_body_length
+  - file_length
+  - function_parameter_count
+excluded:
+  - Pods
+  - now-app-iosTests/GeneratedMocks.swift
+reporter: "xcode"
