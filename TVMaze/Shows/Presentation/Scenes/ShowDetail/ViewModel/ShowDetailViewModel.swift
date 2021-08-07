@@ -17,21 +17,37 @@ final class ShowDetailViewModel: BaseViewModel {
     var goToScenePublishObservable: Observable<ShowsCoordinator.GoToScene> {
         goToSceneSubject
     }
+    var isFavoritePublishObservable: Observable<Bool> {
+        isFavoriteSubject
+    }
 
     private let reloadViewPublishSubject = PublishSubject<Void?>()
     private let goToSceneSubject = PublishSubject<ShowsCoordinator.GoToScene>()
+    private let isFavoriteSubject = PublishSubject<Bool>()
 
     private let args: ShowDetailViewArgs
 
     private let getSeasonsUseCase: GetSeasonsUseCase.Alias
+    private let getFavoritesUseCase: GetFavoritesUseCase.Alias
+    private let updateShowAsFavoriteUseCase: UpdateShowAsFavoriteUseCase.Alias
+
     var show: UiShow {
         args.show
     }
 
     var episodesBySeason = [Int: [UiEpisode]]()
 
-    init(getSeasonsUseCase: GetSeasonsUseCase.Alias, args: ShowDetailViewArgs) {
+    var isFavorite: Bool = false
+
+    init(
+        getSeasonsUseCase: GetSeasonsUseCase.Alias,
+        getFavoritesUseCase: GetFavoritesUseCase.Alias,
+        updateShowAsFavoriteUseCase: UpdateShowAsFavoriteUseCase.Alias,
+        args: ShowDetailViewArgs
+    ) {
         self.getSeasonsUseCase = getSeasonsUseCase
+        self.getFavoritesUseCase = getFavoritesUseCase
+        self.updateShowAsFavoriteUseCase = updateShowAsFavoriteUseCase
         self.args = args
     }
 
@@ -43,7 +59,18 @@ final class ShowDetailViewModel: BaseViewModel {
     func onViewDidLoad() {
         isLoadingSubject.onNext(true)
         argsPublishSubject.onNext(args)
+        getFavorites()
         getShowSeasons()
+    }
+
+    private func getFavorites() {
+        switch getFavoritesUseCase.execute(()) {
+        case .success(data: let favorites):
+            isFavorite = favorites.contains(show.id)
+        default:
+            isFavorite = false
+        }
+        self.isFavoriteSubject.onNext(isFavorite)
     }
 
     private func getShowSeasons() {
@@ -72,4 +99,12 @@ final class ShowDetailViewModel: BaseViewModel {
         }
     }
 
+    func tappedMarkAsFavorite() {
+        _ = updateShowAsFavoriteUseCase.execute(
+            UpdateShowAsFavoriteEntity(
+            showId: show.id,
+            favorite: !isFavorite)
+        )
+        getFavorites()
+    }
 }

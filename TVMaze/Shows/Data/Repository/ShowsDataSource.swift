@@ -11,4 +11,6 @@ protocol ShowsDataSource {
 
     func getShows(onCompletion: @escaping (ApiResult<[Show]>) -> Void)
     func getShowSeasons(showId: Int, onCompletion: @escaping (ApiResult<[Episode]>) -> Void)
+    func update(showId: Int, asFavorite: Bool)
+    func getFavorites() -> [Int]
 }

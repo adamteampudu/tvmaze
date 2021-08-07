@@ -20,6 +20,12 @@ struct ShowsModule {
 
         // Data
 
+        container.register(ShowsLocalDataSource.self) { resolver in
+            ShowsLocalDataSourceImpl(
+                localStorage: resolver.resolve(UserDefaultsLocalStorage.self)!
+            )
+        }
+
         container.register(ShowsRemoteDataSource.self) { resolver in
             ShowsRemoteDataSourceImpl(
                 networkManager: resolver.resolve(NetworkManager.self)!
@@ -39,7 +45,8 @@ struct ShowsModule {
         container.register(ShowsDataSource.self) { resolver in
             ShowsRepository(
                 mapper: resolver.resolve(ShowsDataMapper.self)!,
-                remoteDataSource: resolver.resolve(ShowsRemoteDataSource.self)!
+                remoteDataSource: resolver.resolve(ShowsRemoteDataSource.self)!,
+                localDataSource: resolver.resolve(ShowsLocalDataSource.self)!
             )
         }
 
@@ -47,6 +54,28 @@ struct ShowsModule {
 
         container.register(ShowsDomainMapper.self) { _ in
             ShowsDomainMapperImpl()
+        }
+
+        container.register(
+            GetFavoritesUseCase.Alias.self,
+            name: GetFavoritesUseCase.identifier
+        ) { resolver in
+            GetFavoritesUseCase.Alias(
+                GetFavoritesUseCase(
+                    repository: resolver.resolve(ShowsDataSource.self)!
+                )
+            )
+        }
+
+        container.register(
+            UpdateShowAsFavoriteUseCase.Alias.self,
+            name: UpdateShowAsFavoriteUseCase.identifier
+        ) { resolver in
+            UpdateShowAsFavoriteUseCase.Alias(
+                UpdateShowAsFavoriteUseCase(
+                    repository: resolver.resolve(ShowsDataSource.self)!
+                )
+            )
         }
 
         container.register(
@@ -100,6 +129,14 @@ struct ShowsModule {
                 getSeasonsUseCase: resolver.resolve(
                     GetSeasonsUseCase.Alias.self,
                     name: GetSeasonsUseCase.identifier
+                )!,
+                getFavoritesUseCase: resolver.resolve(
+                    GetFavoritesUseCase.Alias.self,
+                    name: GetFavoritesUseCase.identifier
+                )!,
+                updateShowAsFavoriteUseCase: resolver.resolve(
+                    UpdateShowAsFavoriteUseCase.Alias.self,
+                    name: UpdateShowAsFavoriteUseCase.identifier
                 )!,
                 args: args
             )

@@ -56,6 +56,7 @@ final class ShowDetailViewController: BaseViewController<
     private func setupTableView() {
 
         tableViewHeader = ShowDetailHeaderView.initWithNib()
+        tableViewHeader.delegate = self
         tableView.register(ShowDetailTableViewCell.self)
         tableView.register(
             ShowDetailSectionHeaderView.self,
@@ -76,13 +77,25 @@ final class ShowDetailViewController: BaseViewController<
         }
 
         subscribe(observable: viewModel.argsObservable) { [weak self] in
-            self?.tableViewHeader.setup(with: $0.show)
-            self?.title = $0.show.name
+            guard let self = self else { return }
+            self.tableViewHeader.setup(
+                with: $0.show,
+                isFavorite: self.viewModel.isFavorite
+            )
+            self.title = $0.show.name
         }
 
         subscribe(observable: viewModel.goToScenePublishObservable) { [weak self] goToScene in
             guard let self = self else { return }
             self.coordinator.goToScene(goToScene, from: self)
+        }
+
+        subscribe(observable: viewModel.isFavoritePublishObservable) { [weak self] isFavorite in
+            guard let self = self else { return }
+            self.tableViewHeader.setup(
+                with: self.viewModel.show,
+                isFavorite: self.viewModel.isFavorite
+            )
         }
 
     }
@@ -139,4 +152,10 @@ extension ShowDetailViewController: UITableViewDelegate, UITableViewDataSource {
         viewModel.onSelection(indexPath: indexPath)
     }
 
+}
+
+extension ShowDetailViewController: ShowDetailHeaderViewDelegate {
+    func tappedMarkAsFavorite() {
+        viewModel.tappedMarkAsFavorite()
+    }
 }

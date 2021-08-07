@@ -7,7 +7,13 @@
 
 import UIKit
 
-class ShowDetailHeaderView: UIView {
+protocol ShowDetailHeaderViewDelegate: AnyObject {
+    func tappedMarkAsFavorite()
+}
+
+final class ShowDetailHeaderView: UIView {
+
+    weak var delegate: ShowDetailHeaderViewDelegate?
 
     @IBOutlet private var nameLabel: UILabel! {
         didSet {
@@ -40,13 +46,18 @@ class ShowDetailHeaderView: UIView {
             seasonsLabel.text = L10n.episodes
         }
     }
+    @IBOutlet var markAsFavouriteButton: UIButton! {
+        didSet {
+            markAsFavouriteButton.setTitle(L10n.addToFavorites, for: .normal)
+        }
+    }
 
     class func initWithNib() -> ShowDetailHeaderView {
         let nib = UINib(nibName: String(describing: ShowDetailHeaderView.self), bundle: nil)
         return (nib.instantiate(withOwner: nil, options: nil)[0] as? ShowDetailHeaderView)!
     }
 
-    func setup(with show: UiShow) {
+    func setup(with show: UiShow, isFavorite: Bool) {
 
         if let imageUrlString = show.image?.medium,
            let imageUrl = URL(string: imageUrlString) {
@@ -60,5 +71,15 @@ class ShowDetailHeaderView: UIView {
         let time = show.schedule?.time ?? "-"
         let days = show.schedule?.days?.joined(separator: ", ") ?? "-"
         scheduleLabel.text = "\(time) - \(days)"
+
+        markAsFavouriteButton.setTitle(
+            isFavorite ? L10n.addToFavorites : L10n.removeFromFavorites,
+            for: .normal
+        )
     }
+
+    @IBAction func markAsFavoriteTapped(_ sender: UIButton) {
+        delegate?.tappedMarkAsFavorite()
+    }
+
 }

@@ -15,3 +15,6 @@
 "seasons" = "Seasons";
 "season" = "Season";
 "episodes" = "Episodes";
+"add_to_favorites" = "Add to favorites";
+"remove_from_favorites" = "Remove from favorites";
+"cancel" = "Cancel";

@@ -59,7 +59,9 @@ final class ShowsListViewModel: BaseViewModel {
     func onSelection(row: Int) {
         goToSceneSubject.onNext(
             .pushToShowDetail(
-                ShowDetailViewArgs(show: filteredShows[row])
+                ShowDetailViewArgs(
+                    show: filteredShows[row]
+                )
             )
         )
     }

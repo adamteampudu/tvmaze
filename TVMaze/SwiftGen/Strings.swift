@@ -10,6 +10,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Add to favorites
+  internal static let addToFavorites = L10n.tr("Localizable", "add_to_favorites")
+  /// Cancel
+  internal static let cancel = L10n.tr("Localizable", "cancel")
   /// Continue
   internal static let `continue` = L10n.tr("Localizable", "continue")
   /// Create your watchlist
@@ -18,6 +22,8 @@ internal enum L10n {
   internal static let episodes = L10n.tr("Localizable", "episodes")
   /// Rate your favourites
   internal static let rateYourFavourites = L10n.tr("Localizable", "rate_your_favourites")
+  /// Remove from favorites
+  internal static let removeFromFavorites = L10n.tr("Localizable", "remove_from_favorites")
   /// Search for your favourite actors
   internal static let searchForYourFavouriteActors = L10n.tr("Localizable", "search_for_your_favourite_actors")
   /// Season
