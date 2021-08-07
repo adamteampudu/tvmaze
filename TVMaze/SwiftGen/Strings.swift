@@ -14,10 +14,16 @@ internal enum L10n {
   internal static let `continue` = L10n.tr("Localizable", "continue")
   /// Create your watchlist
   internal static let createYourWatchlist = L10n.tr("Localizable", "create_your_watchlist")
+  /// Episodes
+  internal static let episodes = L10n.tr("Localizable", "episodes")
   /// Rate your favourites
   internal static let rateYourFavourites = L10n.tr("Localizable", "rate_your_favourites")
   /// Search for your favourite actors
   internal static let searchForYourFavouriteActors = L10n.tr("Localizable", "search_for_your_favourite_actors")
+  /// Season
+  internal static let season = L10n.tr("Localizable", "season")
+  /// Seasons
+  internal static let seasons = L10n.tr("Localizable", "seasons")
   /// Shows
   internal static let shows = L10n.tr("Localizable", "shows")
   /// Welcome

@@ -9,7 +9,7 @@ import UIKit
 
 class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoordinator> {
 
-    enum Constants {
+    private enum Constants {
         static let rowHeight: CGFloat = 100
     }
 
@@ -38,7 +38,6 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
 
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
-        searchController.dimsBackgroundDuringPresentation = false
 
         tableView.tableHeaderView = searchController.searchBar
         tableView.register(ShowsListTableViewCell.self)
@@ -49,7 +48,7 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
 
     private func bindViewModel() {
 
-        subscribe(observable: viewModel.reloadViewPublishObservable)  { [weak self] _ in
+        subscribe(observable: viewModel.reloadViewPublishObservable) { [weak self] _ in
             guard let self = self else { return }
             self.tableView.reloadData()
         }

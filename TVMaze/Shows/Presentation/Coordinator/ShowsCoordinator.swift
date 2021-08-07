@@ -12,6 +12,7 @@ final class ShowsCoordinator: Coordinator {
     enum GoToScene {
         case popToWelcomeScreen
         case pushToShowDetail(ShowDetailViewArgs)
+        case pushToShowEpisode(ShowEpisodeViewArgs)
     }
 
     func goToScene(_ scene: GoToScene, from viewController: UIViewController) {
@@ -22,6 +23,11 @@ final class ShowsCoordinator: Coordinator {
             pushViewController(
                 viewController: viewController,
                 newViewControllerType: ShowDetailViewController.self,
+                args: [args])
+        case let .pushToShowEpisode(args):
+            pushViewController(
+                viewController: viewController,
+                newViewControllerType: ShowEpisodeViewController.self,
                 args: [args])
         }
     }

@@ -14,6 +14,10 @@ final class ShowDetailViewModel: BaseViewModel {
         reloadViewPublishSubject
     }
 
+    var goToScenePublishObservable: Observable<ShowsCoordinator.GoToScene> {
+        goToSceneSubject
+    }
+
     private let reloadViewPublishSubject = PublishSubject<Void?>()
     private let goToSceneSubject = PublishSubject<ShowsCoordinator.GoToScene>()
 
@@ -55,4 +59,17 @@ final class ShowDetailViewModel: BaseViewModel {
             }
         }
     }
+
+    func onSelection(indexPath: IndexPath) {
+        if let season = episodesBySeason[indexPath.section + 1] {
+            goToSceneSubject.onNext(
+                .pushToShowEpisode(
+                    ShowEpisodeViewArgs(
+                        show: show,
+                        episode: season[indexPath.row])
+                )
+            )
+        }
+    }
+
 }

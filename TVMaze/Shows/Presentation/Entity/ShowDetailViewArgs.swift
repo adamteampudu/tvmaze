@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ShowDetailViewArgs{
+struct ShowDetailViewArgs {
     let show: UiShow
 }

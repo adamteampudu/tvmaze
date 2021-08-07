@@ -108,12 +108,26 @@ struct ShowsModule {
         container.register(ShowDetailViewController.self) { (resolver, args: ShowDetailViewArgs) in
             ShowDetailViewController(
                 resolver.resolve(ShowsCoordinator.self)!,
-
                 resolver.resolve(
                     ShowDetailViewModel.self,
                     argument: args
                 )!
             )
         }
+
+        container.register(ShowEpisodeViewModel.self) { (_, args: ShowEpisodeViewArgs) in
+            ShowEpisodeViewModel(args: args)
+        }
+
+        container.register(ShowEpisodeViewController.self) { (resolver, args: ShowEpisodeViewArgs) in
+            ShowEpisodeViewController(
+                resolver.resolve(ShowsCoordinator.self)!,
+                resolver.resolve(
+                    ShowEpisodeViewModel.self,
+                    argument: args
+                )!
+            )
+        }
+
     }
 }
