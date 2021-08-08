@@ -13,9 +13,29 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
         static let rowHeight: CGFloat = 100
     }
 
-    @IBOutlet private weak var tableView: UITableView!
-
-    let searchController = UISearchController(searchResultsController: nil)
+    @IBOutlet private var searchView: UIView!
+    @IBOutlet private var searchTextField: UITextField! {
+        didSet {
+            searchTextField.placeholder = L10n.search
+            searchTextField.addTarget(
+                self,
+                action: #selector(searchTextChanged),
+                for: .editingChanged
+            )
+            searchTextField.clearButtonMode = .always
+        }
+    }
+    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var showAllButton: UIButton! {
+        didSet {
+            showAllButton.setTitle(L10n.showAll, for: .normal)
+        }
+    }
+    @IBOutlet private var showFavoritesButton: UIButton! {
+        didSet {
+            showFavoritesButton.setTitle(L10n.showFavorites, for: .normal)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +47,12 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         showNavigationBar()
+        viewModel.onViewWillAppear()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        searchTextField.resignFirstResponder()
     }
 
     private func setupUI() {
@@ -36,10 +62,7 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
 
     private func setupTableView() {
 
-        searchController.searchResultsUpdater = self
-        searchController.hidesNavigationBarDuringPresentation = false
-
-        tableView.tableHeaderView = searchController.searchBar
+        tableView.tableHeaderView = searchView
         tableView.register(ShowsListTableViewCell.self)
         tableView.delegate = self
         tableView.dataSource = self
@@ -48,9 +71,11 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
 
     private func bindViewModel() {
 
-        subscribe(observable: viewModel.reloadViewPublishObservable) { [weak self] _ in
+        subscribe(observable: viewModel.reloadViewWithFavoritesPublishObservable) { [weak self] showFavorites in
             guard let self = self else { return }
             self.tableView.reloadData()
+            self.showAllButton.isEnabled = showFavorites
+            self.showFavoritesButton.isEnabled = !showFavorites
         }
 
         subscribe(observable: viewModel.goToScenePublishObservable) { [weak self] goToScene in
@@ -58,6 +83,19 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
             self.coordinator.goToScene(goToScene, from: self)
         }
     }
+
+    @objc func searchTextChanged() {
+        viewModel.onFilterResults(text: searchTextField.text)
+    }
+
+    @IBAction func showAll(_ sender: Any) {
+        viewModel.onShowAll()
+    }
+
+    @IBAction func showFavorites(_ sender: Any) {
+        viewModel.onShowFavorites()
+    }
+
 }
 
 extension ShowsListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -81,10 +119,4 @@ extension ShowsListViewController: UITableViewDelegate, UITableViewDataSource {
         viewModel.onSelection(row: indexPath.row)
     }
 
-}
-
-extension ShowsListViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        viewModel.filterResults(text: searchController.searchBar.text)
-    }
 }

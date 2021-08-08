@@ -20,16 +20,22 @@ internal enum L10n {
   internal static let createYourWatchlist = L10n.tr("Localizable", "create_your_watchlist")
   /// Episodes
   internal static let episodes = L10n.tr("Localizable", "episodes")
-  /// Rate your favourites
-  internal static let rateYourFavourites = L10n.tr("Localizable", "rate_your_favourites")
+  /// Rate your favorites
+  internal static let rateYourFavorites = L10n.tr("Localizable", "rate_your_favorites")
   /// Remove from favorites
   internal static let removeFromFavorites = L10n.tr("Localizable", "remove_from_favorites")
-  /// Search for your favourite actors
-  internal static let searchForYourFavouriteActors = L10n.tr("Localizable", "search_for_your_favourite_actors")
+  /// Search...
+  internal static let search = L10n.tr("Localizable", "search")
+  /// Search for your favorite actors
+  internal static let searchForYourFavoriteActors = L10n.tr("Localizable", "search_for_your_favorite_actors")
   /// Season
   internal static let season = L10n.tr("Localizable", "season")
   /// Seasons
   internal static let seasons = L10n.tr("Localizable", "seasons")
+  /// Show All
+  internal static let showAll = L10n.tr("Localizable", "show_all")
+  /// Show Favorites
+  internal static let showFavorites = L10n.tr("Localizable", "show_favorites")
   /// Shows
   internal static let shows = L10n.tr("Localizable", "shows")
   /// Welcome

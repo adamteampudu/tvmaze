@@ -7,9 +7,9 @@
 */
 
 "welcome" = "Welcome";
-"search_for_your_favourite_actors" = "Search for your favourite actors";
+"search_for_your_favorite_actors" = "Search for your favorite actors";
 "create_your_watchlist" = "Create your watchlist";
-"rate_your_favourites" = "Rate your favourites";
+"rate_your_favorites" = "Rate your favorites";
 "continue" = "Continue";
 "shows" = "Shows";
 "seasons" = "Seasons";
@@ -18,3 +18,6 @@
 "add_to_favorites" = "Add to favorites";
 "remove_from_favorites" = "Remove from favorites";
 "cancel" = "Cancel";
+"show_all" = "Show All";
+"show_favorites" = "Show Favorites";
+"search" = "Search...";

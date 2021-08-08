@@ -16,7 +16,6 @@ class UserDefaultsLocalStorageImpl: UserDefaultsLocalStorage {
     }
 
     func save<T>(_ value: T?, key: String, useAuthentication: Bool) -> Bool {
-        
         userDefaults.set(value, forKey: key)
         return true
     }

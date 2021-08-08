@@ -21,7 +21,7 @@ final class WelcomeViewController: BaseViewController<WelcomeViewModel, WelcomeC
 
     @IBOutlet private var labelTop: UILabel! {
         didSet {
-            labelTop.text = L10n.searchForYourFavouriteActors
+            labelTop.text = L10n.searchForYourFavoriteActors
             labelTop.font = .systemFont(
                 ofSize: TextSize.header,
                 weight: .medium
@@ -33,7 +33,7 @@ final class WelcomeViewController: BaseViewController<WelcomeViewModel, WelcomeC
 
     @IBOutlet private var labelMiddle: UILabel! {
         didSet {
-            labelMiddle.text = L10n.rateYourFavourites
+            labelMiddle.text = L10n.rateYourFavorites
             labelMiddle.font = .systemFont(
                 ofSize: TextSize.header,
                 weight: .medium

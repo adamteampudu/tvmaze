@@ -24,36 +24,48 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Zxo-MX-lDe" userLabel="Poster">
-                            <rect key="frame" x="0.0" y="24.5" width="21.5" height="30"/>
+                            <rect key="frame" x="0.0" y="24.5" width="7" height="10"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Zxo-MX-lDe" secondAttribute="height" multiplier="210:295" id="dRE-9G-0yP"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-hA-n2g" userLabel="Schedule">
-                            <rect key="frame" x="0.0" y="58.5" width="41.5" height="20.5"/>
+                            <rect key="frame" x="0.0" y="38.5" width="41.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cas-JX-xO3" userLabel="Genres">
-                            <rect key="frame" x="0.0" y="83" width="41.5" height="20.5"/>
+                            <rect key="frame" x="0.0" y="63" width="41.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifo-lA-6XO" userLabel="Summary">
-                            <rect key="frame" x="0.0" y="107.5" width="41.5" height="20.5"/>
+                            <rect key="frame" x="0.0" y="87.5" width="41.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-YQ-7TS">
-                            <rect key="frame" x="0.0" y="132" width="46" height="30"/>
-                            <state key="normal" title="Button"/>
-                            <connections>
-                                <action selector="markAsFavoriteTapped:" destination="1VG-J2-HZD" eventType="touchUpInside" id="9xU-Jq-gQ0"/>
-                            </connections>
-                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75L-Xj-lSc">
+                            <rect key="frame" x="0.0" y="112" width="374" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-YQ-7TS">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="markAsFavoriteTapped:" destination="1VG-J2-HZD" eventType="touchUpInside" id="9xU-Jq-gQ0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Bqv-YQ-7TS" firstAttribute="leading" secondItem="75L-Xj-lSc" secondAttribute="leading" id="3nh-1T-4Gh"/>
+                                <constraint firstAttribute="bottom" secondItem="Bqv-YQ-7TS" secondAttribute="bottom" id="Dpf-c6-Kil"/>
+                                <constraint firstAttribute="trailing" secondItem="Bqv-YQ-7TS" secondAttribute="trailing" id="q7p-j9-jSH"/>
+                                <constraint firstItem="Bqv-YQ-7TS" firstAttribute="top" secondItem="75L-Xj-lSc" secondAttribute="top" id="rhc-u4-aIr"/>
+                            </constraints>
+                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyC-xQ-dsw">
                             <rect key="frame" x="0.0" y="166" width="50" height="50"/>
                             <subviews>
@@ -73,6 +85,9 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="Bqv-YQ-7TS" firstAttribute="width" secondItem="BXp-jA-dgY" secondAttribute="width" id="t3C-rA-XFc"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,7 +100,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="genresLabel" destination="cas-JX-xO3" id="wa8-eq-XQz"/>
-                <outlet property="markAsFavouriteButton" destination="Bqv-YQ-7TS" id="mdV-B9-n3w"/>
+                <outlet property="markAsfavoriteButton" destination="Bqv-YQ-7TS" id="mdV-B9-n3w"/>
                 <outlet property="nameLabel" destination="B3w-qc-ecB" id="Xi5-ib-iOM"/>
                 <outlet property="poster" destination="Zxo-MX-lDe" id="uJD-ak-H4P"/>
                 <outlet property="scheduleLabel" destination="UW3-hA-n2g" id="TF5-zI-T5o"/>

@@ -29,4 +29,6 @@ struct UiShow: Decodable {
     let summary: String?
     let updated: Int?
     let links: UiLinks?
+
+    var isFavorite: Bool = false
 }

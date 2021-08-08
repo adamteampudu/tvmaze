@@ -19,7 +19,7 @@ class ShowsLocalDataSourceImpl: ShowsLocalDataSource {
         var favorites = Set(getFavorites())
         if asFavorite {
             favorites.insert(showId)
-        }else {
+        } else {
             favorites.remove(showId)
         }
         _ = localStorage.save(

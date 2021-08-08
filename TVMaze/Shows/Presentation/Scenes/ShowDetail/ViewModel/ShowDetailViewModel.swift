@@ -82,7 +82,7 @@ final class ShowDetailViewModel: BaseViewModel {
                 self.episodesBySeason = grouped
                 self.reloadViewPublishSubject.onNext(())
             default:
-                debugPrint("adsf")
+                debugPrint("implement error screen")
             }
         }
     }

@@ -46,9 +46,9 @@ final class ShowDetailHeaderView: UIView {
             seasonsLabel.text = L10n.episodes
         }
     }
-    @IBOutlet var markAsFavouriteButton: UIButton! {
+    @IBOutlet var markAsfavoriteButton: UIButton! {
         didSet {
-            markAsFavouriteButton.setTitle(L10n.addToFavorites, for: .normal)
+            markAsfavoriteButton.setTitle(L10n.addToFavorites, for: .normal)
         }
     }
 
@@ -72,8 +72,8 @@ final class ShowDetailHeaderView: UIView {
         let days = show.schedule?.days?.joined(separator: ", ") ?? "-"
         scheduleLabel.text = "\(time) - \(days)"
 
-        markAsFavouriteButton.setTitle(
-            isFavorite ? L10n.addToFavorites : L10n.removeFromFavorites,
+        markAsfavoriteButton.setTitle(
+            isFavorite ? L10n.removeFromFavorites : L10n.addToFavorites,
             for: .normal
         )
     }
