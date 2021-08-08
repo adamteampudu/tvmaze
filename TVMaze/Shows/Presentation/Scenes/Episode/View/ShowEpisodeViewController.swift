@@ -25,6 +25,10 @@ class ShowEpisodeViewController: BaseViewController<ShowEpisodeViewModel, ShowsC
     }
     @IBOutlet private var image: UIImageView!
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()

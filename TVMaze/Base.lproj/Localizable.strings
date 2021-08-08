@@ -21,3 +21,7 @@
 "show_all" = "Show All";
 "show_favorites" = "Show Favorites";
 "search" = "Search...";
+"ok" = "OK";
+"whoops" = "Whoops!";
+"try_again_later" = "Something is up with the API, try again later";
+

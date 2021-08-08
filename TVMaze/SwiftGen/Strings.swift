@@ -20,6 +20,8 @@ internal enum L10n {
   internal static let createYourWatchlist = L10n.tr("Localizable", "create_your_watchlist")
   /// Episodes
   internal static let episodes = L10n.tr("Localizable", "episodes")
+  /// OK
+  internal static let ok = L10n.tr("Localizable", "ok")
   /// Rate your favorites
   internal static let rateYourFavorites = L10n.tr("Localizable", "rate_your_favorites")
   /// Remove from favorites
@@ -38,8 +40,12 @@ internal enum L10n {
   internal static let showFavorites = L10n.tr("Localizable", "show_favorites")
   /// Shows
   internal static let shows = L10n.tr("Localizable", "shows")
+  /// Something is up with the API, try again later
+  internal static let tryAgainLater = L10n.tr("Localizable", "try_again_later")
   /// Welcome
   internal static let welcome = L10n.tr("Localizable", "welcome")
+  /// Whoops!
+  internal static let whoops = L10n.tr("Localizable", "whoops")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

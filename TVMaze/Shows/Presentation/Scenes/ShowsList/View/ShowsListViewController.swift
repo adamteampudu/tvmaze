@@ -17,11 +17,6 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
     @IBOutlet private var searchTextField: UITextField! {
         didSet {
             searchTextField.placeholder = L10n.search
-            searchTextField.addTarget(
-                self,
-                action: #selector(searchTextChanged),
-                for: .editingChanged
-            )
             searchTextField.clearButtonMode = .always
         }
     }
@@ -35,6 +30,10 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
         didSet {
             showFavoritesButton.setTitle(L10n.showFavorites, for: .normal)
         }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
     override func viewDidLoad() {
@@ -82,10 +81,13 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
             guard let self = self else { return }
             self.coordinator.goToScene(goToScene, from: self)
         }
-    }
 
-    @objc func searchTextChanged() {
-        viewModel.onFilterResults(text: searchTextField.text)
+        searchTextField.rx
+            .controlEvent([.editingChanged])
+            .withLatestFrom(searchTextField.rx.text.orEmpty)
+            .subscribe(onNext: { [weak self] searchTerm in
+                self?.viewModel.onFilterResults(text: searchTerm)
+            }).disposed(by: disposeBag)
     }
 
     @IBAction func showAll(_ sender: Any) {

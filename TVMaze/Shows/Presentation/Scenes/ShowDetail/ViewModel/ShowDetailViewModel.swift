@@ -57,7 +57,6 @@ final class ShowDetailViewModel: BaseViewModel {
     }
 
     func onViewDidLoad() {
-        isLoadingSubject.onNext(true)
         argsPublishSubject.onNext(args)
         getFavorites()
         getShowSeasons()
@@ -74,6 +73,7 @@ final class ShowDetailViewModel: BaseViewModel {
     }
 
     private func getShowSeasons() {
+        isLoadingSubject.onNext(true)
         getSeasonsUseCase.execute(args.show.id) { [weak self] showSeasons in
             guard let self = self else { return }
             switch showSeasons {
@@ -84,6 +84,7 @@ final class ShowDetailViewModel: BaseViewModel {
             default:
                 debugPrint("implement error screen")
             }
+            self.isLoadingSubject.onNext(false)
         }
     }
 

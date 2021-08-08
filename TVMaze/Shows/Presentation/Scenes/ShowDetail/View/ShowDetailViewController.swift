@@ -21,6 +21,10 @@ final class ShowDetailViewController: BaseViewController<
 
     @IBOutlet private weak var tableView: UITableView!
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()

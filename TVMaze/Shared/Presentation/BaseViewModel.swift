@@ -29,24 +29,20 @@ class BaseViewModel {
         onMainAction: (() -> Void)? = nil,
         onSecondaryAction: (() -> Void)? = nil
     ) {
-//        let error: DisplayableErrorType
-//        switch errorType {
-//        case .connection:
-//            error = .connectionError
-//        case .api(let apiError, let debugModeStatus):
-//            if debugModeStatus == .on {
-//                error = .serverErrorDebugMode(code: apiError.code, message: apiError.message)
-//            } else {
-//                error = .serverError(code: apiError.code, message: apiError.message)
-//            }
-//        case .general:
-//            error = .serverError()
-//        }
-//        errorSubject.onNext(ErrorArgs(
-//            error: error,
-//            presentationType: presentationType,
-//            onMainAction: onMainAction,
-//            onSecondaryAction: onSecondaryAction
-//        ))
+        let error: DisplayableErrorType
+        switch errorType {
+        case .connection:
+            error = .connectionError
+        case .api(let apiError):
+            error = .serverError(code: apiError.code, message: apiError.message)
+        case .general:
+            error = .serverError()
+        }
+        errorSubject.onNext(ErrorArgs(
+            error: error,
+            presentationType: presentationType,
+            onMainAction: onMainAction,
+            onSecondaryAction: onSecondaryAction
+        ))
     }
 }

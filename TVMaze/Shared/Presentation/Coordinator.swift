@@ -1,6 +1,5 @@
 //
 //  Coordinator.swift
-//  TVMaze
 //
 //  Created by Daniel Santamaria on 10/5/20.
 //
@@ -70,33 +69,34 @@ class Coordinator {
         }
     }
 
-//    func presentAlert(
-//        from currentViewController: UIViewController,
-//        args: BaseAlertViewArgs
-//    ) {
-//        let alertViewController = getAlertController(for: args)
-//        let nav = UINavigationController(rootViewController: alertViewController)
-//        nav.setNavigationBarHidden(true, animated: false)
-//
-//        switch args.presentation {
-//        case .presentFullScreen:
-//            nav.modalPresentationStyle = .fullScreen
-//        case .presentPopUp:
-//            nav.modalPresentationStyle = .custom
-//            nav.modalTransitionStyle = .crossDissolve
-//        default:
-//            break
-//        }
-//
-//        currentViewController.navigationController?.present(nav, animated: true, completion: nil)
-//    }
+    func presentAlert(
+        from currentViewController: UIViewController,
+        args: BaseAlertViewArgs
+    ) {
 
-//    private func getAlertController(for args: BaseAlertViewArgs) -> BaseAlertViewController {
-//        return BaseAlertViewController(
-//            args: args.contentArgs,
-//            presentation: args.presentation,
-//            onMainAction: args.onMainAction,
-//            onSecondaryAction: args.onSecondaryAction
-//        )
-//    }
+        //Later handle alert specific a actions/title
+
+        let alertController = UIAlertController(
+            title: L10n.whoops,
+            message: L10n.tryAgainLater,
+            preferredStyle: .alert
+        )
+
+        let action = UIAlertAction(
+            title: "OK",
+            style: .default
+        )
+        alertController.addAction(action)
+
+        currentViewController.navigationController?.present(alertController, animated: true, completion: nil)
+    }
+
+    private func getAlertController(for args: BaseAlertViewArgs) -> BaseAlertViewController {
+        return BaseAlertViewController(
+            args: args.contentArgs,
+            presentation: args.presentation,
+            onMainAction: args.onMainAction,
+            onSecondaryAction: args.onSecondaryAction
+        )
+    }
 }

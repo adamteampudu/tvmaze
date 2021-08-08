@@ -17,6 +17,10 @@ class BaseViewController<V: BaseViewModel, C: Coordinator>: UIViewController {
     let coordinator: C
     let disposeBag = DisposeBag()
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     init(
         _ coordinator: C,
         _ viewModel: V
@@ -32,6 +36,7 @@ class BaseViewController<V: BaseViewModel, C: Coordinator>: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNeedsStatusBarAppearanceUpdate()
         subscribeToError()
         subscribeToIsLoadingObservable()
     }
@@ -72,13 +77,16 @@ class BaseViewController<V: BaseViewModel, C: Coordinator>: UIViewController {
 
     private func setupNavigationBar() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-//        navigationController?.navigationBar.tintColor = Asset.Colors.textInput.color
-//        navigationController?.navigationBar.barTintColor = Asset.Colors.backgroundOverlay.color
-//        navigationController?.navigationBar.backgroundColor = Asset.Colors.backgroundOverlay.color
-//        navigationController?.navigationBar.titleTextAttributes = [
-//            NSAttributedString.Key.foregroundColor: Asset.Colors.textInput.color,
-//            NSAttributedString.Key.font: UIFont.systemFont(ofSize: TextSize.HEADING_5, weight: UIFont.Weight.regular)
-//        ]
+        navigationController?.navigationBar.tintColor = Asset.Colors.primaryText.color
+        navigationController?.navigationBar.barTintColor = Asset.Colors.primary.color
+        navigationController?.navigationBar.backgroundColor = Asset.Colors.background.color
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: Asset.Colors.background.color,
+            NSAttributedString.Key.font: UIFont.systemFont(
+                ofSize: TextSize.body,
+                weight: UIFont.Weight.regular
+            )
+        ]
     }
 
     func hideBackButton() {
@@ -88,12 +96,12 @@ class BaseViewController<V: BaseViewModel, C: Coordinator>: UIViewController {
     private func subscribeToError() {
         subscribe(observable: viewModel.baseErrorObservable) { [weak self] errorArgs in
             guard let self = self else { return }
-//            self.present(
-//                args: errorArgs.error,
-//                presentationType: errorArgs.presentationType,
-//                onMainAction: errorArgs.onMainAction,
-//                onSecondaryAction: errorArgs.onSecondaryAction
-//            )
+            self.present(
+                args: errorArgs.error,
+                presentationType: errorArgs.presentationType,
+                onMainAction: errorArgs.onMainAction,
+                onSecondaryAction: errorArgs.onSecondaryAction
+            )
         }
     }
 
@@ -129,35 +137,15 @@ extension BaseViewController {
                                      onMainAction: onMainAction,
                                      onSecondaryAction: onSecondaryAction,
                                      onTertiaryAction: onTertiaryAction)
-//        coordinator.presentAlert(from: self, args: args)
+        coordinator.presentAlert(from: self, args: args)
     }
 
-    func push(args: BaseAlertViewContentArgs,
-              onMainAction: (() -> Void)? = nil,
-              onSecondaryAction: (() -> Void)? = nil,
-              onTertiaryAction: (() -> Void)? = nil) {
-        let args = BaseAlertViewArgs(contentArgs: args,
-                                     presentation: .pushFullScreen,
-                                     onMainAction: onMainAction,
-                                     onSecondaryAction: onSecondaryAction,
-                                     onTertiaryAction: onTertiaryAction)
-//        coordinator.pushAlert(from: self, args: args)
-    }
-
-//    func pushLoaderError(error: LoaderErrorType,
-//                         onMainAction: (() -> Void)? = nil,
-//                         onSecondaryAction: (() -> Void)? = nil) {
-//        let errorVC = LoaderErrorViewController(error: error,
-//                                                onMainAction: onMainAction,
-//                                                onSecondaryAction: onSecondaryAction)
-//        navigationController?.pushViewController(errorVC, animated: true)
-//    }
 }
 
 extension BaseViewController {
     private func subscribeToIsLoadingObservable() {
-//        subscribe(observable: viewModel.isLoadingObservable, action: {
-//            $0 ? LoaderBuffer.shared.showLoader() : LoaderBuffer.shared.hideLoader()
-//        })
+        subscribe(observable: viewModel.isLoadingObservable, action: {
+            $0 ? LoaderBuffer.shared.showLoader() : LoaderBuffer.shared.hideLoader()
+        })
     }
 }

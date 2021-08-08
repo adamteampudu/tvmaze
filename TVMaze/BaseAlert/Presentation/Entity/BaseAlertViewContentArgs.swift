@@ -8,7 +8,6 @@
 import UIKit
 
 protocol BaseAlertViewContentArgs {
-    var image: UIImage? { get }
     var title: String? { get }
     var body: String? { get }
     var mainActionTitle: String? { get }

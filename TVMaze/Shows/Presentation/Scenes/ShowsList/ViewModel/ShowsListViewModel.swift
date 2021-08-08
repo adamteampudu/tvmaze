@@ -10,16 +10,21 @@ import RxSwift
 
 final class ShowsListViewModel: BaseViewModel {
 
+    var onSearchTextChangedObservable: Observable<String> {
+        onSearchTextChangedSubject
+    }
+
     var reloadViewWithFavoritesPublishObservable: Observable<Bool> {
-        reloadViewWithFavotiresPublishSubject
+        reloadViewWithFavoritesPublishSubject
     }
 
     var goToScenePublishObservable: Observable<ShowsCoordinator.GoToScene> {
         goToSceneSubject
     }
 
-    private let reloadViewWithFavotiresPublishSubject = PublishSubject<Bool>()
+    private let reloadViewWithFavoritesPublishSubject = PublishSubject<Bool>()
     private let goToSceneSubject = PublishSubject<ShowsCoordinator.GoToScene>()
+    private let onSearchTextChangedSubject = PublishSubject<String>()
     private var shows: [UiShow] = []
     private var favorites: [Int] = []
     private var showFavorites = false
@@ -77,7 +82,7 @@ final class ShowsListViewModel: BaseViewModel {
             nShow.isFavorite = favorites.contains(show.id)
             return nShow
         })
-        reloadViewWithFavotiresPublishSubject.onNext(showFavorites)
+        reloadViewWithFavoritesPublishSubject.onNext(showFavorites)
     }
 
     private func getFavorites() {
@@ -102,17 +107,17 @@ final class ShowsListViewModel: BaseViewModel {
 
     func onFilterResults(text: String?) {
         currentSearchTerm = text
-        self.reloadViewWithFavotiresPublishSubject.onNext(showFavorites)
+        self.reloadViewWithFavoritesPublishSubject.onNext(showFavorites)
     }
 
     func onShowAll() {
         showFavorites = false
-        reloadViewWithFavotiresPublishSubject.onNext(showFavorites)
+        reloadViewWithFavoritesPublishSubject.onNext(showFavorites)
     }
 
     func onShowFavorites() {
         showFavorites = true
-        reloadViewWithFavotiresPublishSubject.onNext(showFavorites)
+        reloadViewWithFavoritesPublishSubject.onNext(showFavorites)
     }
 
 }
