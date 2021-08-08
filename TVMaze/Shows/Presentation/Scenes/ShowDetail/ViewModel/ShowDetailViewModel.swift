@@ -20,6 +20,9 @@ final class ShowDetailViewModel: BaseViewModel {
     var isFavoritePublishObservable: Observable<Bool> {
         isFavoriteSubject
     }
+    var argsObservable: Observable<ShowDetailViewArgs> {
+        argsPublishSubject
+    }
 
     private let reloadViewPublishSubject = PublishSubject<Void?>()
     private let goToSceneSubject = PublishSubject<ShowsCoordinator.GoToScene>()
@@ -35,9 +38,9 @@ final class ShowDetailViewModel: BaseViewModel {
         args.show
     }
 
-    var episodesBySeason = [Int: [UiEpisode]]()
+    private(set) var episodesBySeason = [Int: [UiEpisode]]()
 
-    var isFavorite: Bool = false
+    private(set) var isFavorite: Bool = false
 
     init(
         getSeasonsUseCase: GetSeasonsUseCase.Alias,
@@ -52,9 +55,6 @@ final class ShowDetailViewModel: BaseViewModel {
     }
 
     private let argsPublishSubject = PublishSubject<ShowDetailViewArgs>()
-    var argsObservable: Observable<ShowDetailViewArgs> {
-        argsPublishSubject
-    }
 
     func onViewDidLoad() {
         argsPublishSubject.onNext(args)

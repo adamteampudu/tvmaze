@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ShowsLocalDataSourceImpl: ShowsLocalDataSource {
+final class ShowsLocalDataSourceImpl: ShowsLocalDataSource {
 
     private let localStorage: LocalStorage
 

@@ -22,14 +22,6 @@ final class ShowsListViewModel: BaseViewModel {
         goToSceneSubject
     }
 
-    private let reloadViewWithFavoritesPublishSubject = PublishSubject<Bool>()
-    private let goToSceneSubject = PublishSubject<ShowsCoordinator.GoToScene>()
-    private let onSearchTextChangedSubject = PublishSubject<String>()
-    private var shows: [UiShow] = []
-    private var favorites: [Int] = []
-    private var showFavorites = false
-    private var currentSearchTerm: String?
-
     var filteredShows: [UiShow] {
         let showsToFilter = !showFavorites ? shows : shows.filter { $0.isFavorite == true }
         if let searchText = currentSearchTerm, !searchText.isEmpty {
@@ -41,24 +33,35 @@ final class ShowsListViewModel: BaseViewModel {
         }
     }
 
+    private let reloadViewWithFavoritesPublishSubject = PublishSubject<Bool>()
+    private let goToSceneSubject = PublishSubject<ShowsCoordinator.GoToScene>()
+    private let onSearchTextChangedSubject = PublishSubject<String>()
+    private var shows: [UiShow] = []
+    private var favorites: [Int] = []
+    private(set) var showFavorites = false
+    private var currentSearchTerm: String?
+
     private let getShowsUseCase: GetShowsUseCase.Alias
     private let getFavoritesUseCase: GetFavoritesUseCase.Alias
+    private let updateShowAsFavoriteUseCase: UpdateShowAsFavoriteUseCase.Alias
 
     init(
         getShowsUseCase: GetShowsUseCase.Alias,
-        getFavoritesUseCase: GetFavoritesUseCase.Alias
+        getFavoritesUseCase: GetFavoritesUseCase.Alias,
+        updateShowAsFavoriteUseCase: UpdateShowAsFavoriteUseCase.Alias
     ) {
         self.getShowsUseCase = getShowsUseCase
         self.getFavoritesUseCase = getFavoritesUseCase
+        self.updateShowAsFavoriteUseCase = updateShowAsFavoriteUseCase
     }
 
     func onViewDidLoad() {
-        getFavorites()
+        updateFavorites()
         getShows()
     }
 
     func onViewWillAppear() {
-        getFavorites()
+        updateFavorites()
     }
 
     private func getShows() {
@@ -69,14 +72,14 @@ final class ShowsListViewModel: BaseViewModel {
             switch getMoviesResult {
             case .success(data: let moviesList):
                 self.shows = moviesList
-                self.updateFavorites()
+                self.filterFavorites()
             case .error(error: let errorType):
                 self.onError(errorType)
             }
         }
     }
 
-    private func updateFavorites() {
+    private func filterFavorites() {
         shows = shows.map({ show in
             var nShow = show
             nShow.isFavorite = favorites.contains(show.id)
@@ -85,14 +88,14 @@ final class ShowsListViewModel: BaseViewModel {
         reloadViewWithFavoritesPublishSubject.onNext(showFavorites)
     }
 
-    private func getFavorites() {
+    private func updateFavorites() {
         switch getFavoritesUseCase.execute(()) {
         case .success(data: let currentFavorites):
             favorites = currentFavorites
         default:
             favorites = []
         }
-        updateFavorites()
+        filterFavorites()
     }
 
     func onSelection(row: Int) {
@@ -120,4 +123,13 @@ final class ShowsListViewModel: BaseViewModel {
         reloadViewWithFavoritesPublishSubject.onNext(showFavorites)
     }
 
+    func onUpdateShowIdAsFavorite(atRow row: Int) {
+        let show = filteredShows[row]
+        _ = updateShowAsFavoriteUseCase.execute(
+            UpdateShowAsFavoriteEntity(
+            showId: show.id,
+                favorite: !show.isFavorite)
+        )
+        updateFavorites()
+    }
 }

@@ -72,6 +72,7 @@ final class ShowDetailViewController: BaseViewController<
         tableView.rowHeight = Constants.rowHeight
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.tableHeaderView = tableViewHeader
+        tableView.contentInset.bottom = view.safeAreaInsets.bottom
     }
 
     private func bindViewModel() {

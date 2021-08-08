@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShowEpisodeViewController: BaseViewController<ShowEpisodeViewModel, ShowsCoordinator> {
+final class ShowEpisodeViewController: BaseViewController<ShowEpisodeViewModel, ShowsCoordinator> {
 
     @IBOutlet private var nameLabel: UILabel! {
         didSet {

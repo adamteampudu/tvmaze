@@ -56,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2FDD8CFD-266E-4D88-BBB1-D2EDA89417BA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TVMaze/Shows/Data/DataSource/ShowsLocalDataSourceImpl.swift"
@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E6F0BC84-4E29-40C3-AFEA-5A53A09F1379"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TVMaze/Shows/Data/DataSource/ShowsLocalDataSourceImpl.swift"
@@ -215,22 +215,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4405E38B-16B1-4212-AC79-520A225EF350"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMaze/Shared/Data/LocalStorage/UserDefaultsLocalStorageImpl.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "save(_:key:useAuthentication:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "EE3F54A6-0012-400C-9838-882F6F34A950"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -286,8 +270,8 @@
             filePath = "TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "onShowAll()"
             landmarkType = "7">
          </BreakpointContent>
@@ -302,74 +286,10 @@
             filePath = "TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "onShowFavorites()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C1C0516B-BD29-45F0-9D62-0D76F36CEF93"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "filteredShows"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C640E8C9-65D8-46EA-8734-3E3F2C6A8AFC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "filteredShows"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C640E8C9-65D8-46EA-8734-3E3F2C6A8AFC - 4864934de276287"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TVMaze.ShowsListViewModel.filteredShows.getter : Swift.Array&lt;TVMaze.UiShow&gt;"
-                  moduleName = "TVMaze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adamteale/code/TVMaze/TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "836">
-               </Location>
-               <Location
-                  uuid = "C640E8C9-65D8-46EA-8734-3E3F2C6A8AFC - 5361ae6bb71d3b5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (TVMaze.UiShow) -&gt; Swift.Bool in TVMaze.ShowsListViewModel.filteredShows.getter : Swift.Array&lt;TVMaze.UiShow&gt;"
-                  moduleName = "TVMaze"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adamteale/code/TVMaze/TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -382,26 +302,10 @@
             filePath = "TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "onFilterResults(text:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CCF66CA8-B8BD-4562-8C51-2B1270811E40"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMaze/Shows/Presentation/Scenes/ShowsList/ViewModel/ShowsListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "filteredShows"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

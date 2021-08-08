@@ -117,6 +117,10 @@ struct ShowsModule {
                 getFavoritesUseCase: resolver.resolve(
                     GetFavoritesUseCase.Alias.self,
                     name: GetFavoritesUseCase.identifier
+                )!,
+                updateShowAsFavoriteUseCase: resolver.resolve(
+                    UpdateShowAsFavoriteUseCase.Alias.self,
+                    name: UpdateShowAsFavoriteUseCase.identifier
                 )!
             )
         }

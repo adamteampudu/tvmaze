@@ -121,4 +121,26 @@ extension ShowsListViewController: UITableViewDelegate, UITableViewDataSource {
         viewModel.onSelection(row: indexPath.row)
     }
 
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        viewModel.showFavorites
+//    }
+
+    func tableView(
+        _ tableView: UITableView,
+        trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath
+    ) -> UISwipeActionsConfiguration? {
+
+        let markAsFavorite = UIContextualAction(
+            style: .normal,
+            title: viewModel.filteredShows[indexPath.row].isFavorite ? L10n.removeFromFavorites : L10n.addToFavorites
+        ) { (_, _, _) in
+            self.tableView.isEditing = false
+            self.viewModel.onUpdateShowIdAsFavorite(atRow: indexPath.row)
+        }
+
+        let swipeActionConfig = UISwipeActionsConfiguration(actions: [markAsFavorite])
+        swipeActionConfig.performsFirstActionWithFullSwipe = true
+        return swipeActionConfig
+    }
+
 }

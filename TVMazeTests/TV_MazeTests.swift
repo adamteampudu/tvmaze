@@ -1,14 +1,14 @@
 //
-//  TV_MazeTests.swift
+//  TVMazeTests.swift
 //  TVMazeTests
 //
 //  Created by Adam Teale on 04-08-21.
 //
 
 import XCTest
-@testable import TV_Maze
+@testable import TVMaze
 
-class TVMazeTests: XCTestCase {
+final class TVMazeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

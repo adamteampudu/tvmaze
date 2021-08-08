@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UserDefaultsLocalStorageImpl: UserDefaultsLocalStorage {
+final class UserDefaultsLocalStorageImpl: UserDefaultsLocalStorage {
 
     let userDefaults: UserDefaults
 

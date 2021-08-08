@@ -12,7 +12,7 @@ final class ShowEpisodeViewModel: BaseViewModel {
 
     private let args: ShowEpisodeViewArgs
 
-    var episode: UiEpisode {
+    private var episode: UiEpisode {
         args.episode
     }
 
@@ -26,7 +26,6 @@ final class ShowEpisodeViewModel: BaseViewModel {
     }
 
     func onViewDidLoad() {
-        isLoadingSubject.onNext(true)
         argsPublishSubject.onNext(args)
     }
 

@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 import LocalAuthentication
 
-class MainModule {
+final class MainModule {
 
     private let container: Container
     private static let mainBundleServiceName = "mainBundle"
