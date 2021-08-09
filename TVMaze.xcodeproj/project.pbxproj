@@ -120,6 +120,10 @@
 		037E038F26C09744003AF5E4 /* UiCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038A26C09744003AF5E4 /* UiCrew.swift */; };
 		037E039226C09B98003AF5E4 /* GetPersonCastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E039026C09B98003AF5E4 /* GetPersonCastUseCase.swift */; };
 		037E039326C09B98003AF5E4 /* GetPersonCrewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E039126C09B98003AF5E4 /* GetPersonCrewUseCase.swift */; };
+		037E03E526C0ADD0003AF5E4 /* ShowsLocalDataSourceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E03E426C0ADD0003AF5E4 /* ShowsLocalDataSourceImplTests.swift */; };
+		037E03EF26C0B2A6003AF5E4 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CA570C26BB7B5C00DD8681 /* XCAssets+Generated.swift */; };
+		037E03F026C0B2B7003AF5E4 /* generate-mock-files.sh in Resources */ = {isa = PBXBuildFile; fileRef = 037E03E826C0AEE9003AF5E4 /* generate-mock-files.sh */; };
+		037E03F126C0B404003AF5E4 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E03EC26C0B21E003AF5E4 /* GeneratedMocks.swift */; };
 		0398BEB626BB903700F7B9D2 /* ShowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398BEB526BB903700F7B9D2 /* ShowsCoordinator.swift */; };
 		0398BEB826BB92ED00F7B9D2 /* ShowsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0398BEB726BB92ED00F7B9D2 /* ShowsListViewController.xib */; };
 		0398BEBB26BB936600F7B9D2 /* ShowsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398BEB926BB936600F7B9D2 /* ShowsListTableViewCell.swift */; };
@@ -164,13 +168,11 @@
 		03CA565F26BB6C7E00DD8681 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CA565E26BB6C7E00DD8681 /* WelcomeViewModel.swift */; };
 		03CA570A26BB7A2500DD8681 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 03CA570926BB7A2500DD8681 /* swiftgen.yml */; };
 		03CA570D26BB7B5C00DD8681 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CA570B26BB7B5C00DD8681 /* Strings.swift */; };
-		03CA570E26BB7B5C00DD8681 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CA570C26BB7B5C00DD8681 /* XCAssets+Generated.swift */; };
 		03D3DE2F26BDF85B0098C4F9 /* ApiResult+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D3DE2E26BDF85B0098C4F9 /* ApiResult+Extension.swift */; };
 		03D3DE3526BE045D0098C4F9 /* NetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D3DE3426BE045D0098C4F9 /* NetworkModule.swift */; };
 		03E19E6F26BB215E00725055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E19E6E26BB215E00725055 /* AppDelegate.swift */; };
 		03E19E7826BB216000725055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E19E7726BB216000725055 /* Assets.xcassets */; };
 		03E19E7B26BB216000725055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E19E7926BB216000725055 /* LaunchScreen.storyboard */; };
-		03E19E8626BB216000725055 /* TV_MazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E19E8526BB216000725055 /* TV_MazeTests.swift */; };
 		03E19EA026BB22CB00725055 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E19E9F26BB22CB00725055 /* Injection.swift */; };
 		03E19EA326BB231000725055 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E19EA226BB231000725055 /* MainModule.swift */; };
 		03E19EA926BB238000725055 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E19EA826BB238000725055 /* WelcomeViewController.swift */; };
@@ -311,6 +313,9 @@
 		037E038A26C09744003AF5E4 /* UiCrew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiCrew.swift; sourceTree = "<group>"; };
 		037E039026C09B98003AF5E4 /* GetPersonCastUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonCastUseCase.swift; sourceTree = "<group>"; };
 		037E039126C09B98003AF5E4 /* GetPersonCrewUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonCrewUseCase.swift; sourceTree = "<group>"; };
+		037E03E426C0ADD0003AF5E4 /* ShowsLocalDataSourceImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsLocalDataSourceImplTests.swift; sourceTree = "<group>"; };
+		037E03E826C0AEE9003AF5E4 /* generate-mock-files.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "generate-mock-files.sh"; sourceTree = "<group>"; };
+		037E03EC26C0B21E003AF5E4 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		0398BEB526BB903700F7B9D2 /* ShowsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCoordinator.swift; sourceTree = "<group>"; };
 		0398BEB726BB92ED00F7B9D2 /* ShowsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowsListViewController.xib; sourceTree = "<group>"; };
 		0398BEB926BB936600F7B9D2 /* ShowsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListTableViewCell.swift; sourceTree = "<group>"; };
@@ -364,7 +369,6 @@
 		03E19E7A26BB216000725055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03E19E7C26BB216000725055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E19E8126BB216000725055 /* TVMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03E19E8526BB216000725055 /* TV_MazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV_MazeTests.swift; sourceTree = "<group>"; };
 		03E19E8726BB216000725055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E19E9F26BB22CB00725055 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		03E19EA226BB231000725055 /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
@@ -830,6 +834,648 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		037E039426C0AD8A003AF5E4 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				037E039526C0AD8A003AF5E4 /* DI */,
+				037E039626C0AD8A003AF5E4 /* Data */,
+				037E039B26C0AD8A003AF5E4 /* Domain */,
+				037E039F26C0AD8A003AF5E4 /* Presentation */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		037E039526C0AD8A003AF5E4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		037E039626C0AD8A003AF5E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				037E039726C0AD8A003AF5E4 /* DataSource */,
+				037E039826C0AD8A003AF5E4 /* Repository */,
+				037E039926C0AD8A003AF5E4 /* Entity */,
+				037E039A26C0AD8A003AF5E4 /* Mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		037E039726C0AD8A003AF5E4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		037E039826C0AD8A003AF5E4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		037E039926C0AD8A003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E039A26C0AD8A003AF5E4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		037E039B26C0AD8A003AF5E4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				037E039C26C0AD8A003AF5E4 /* Entity */,
+				037E039D26C0AD8A003AF5E4 /* Mapper */,
+				037E039E26C0AD8A003AF5E4 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		037E039C26C0AD8A003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E039D26C0AD8A003AF5E4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		037E039E26C0AD8A003AF5E4 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		037E039F26C0AD8A003AF5E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E03A026C0AD8A003AF5E4 /* Scenes */,
+				037E03A826C0AD8A003AF5E4 /* Coordinator */,
+				037E03A926C0AD8A003AF5E4 /* Entity */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		037E03A026C0AD8A003AF5E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				037E03A126C0AD8A003AF5E4 /* PeopleList */,
+				037E03A426C0AD8A003AF5E4 /* Episode */,
+				037E03A526C0AD8A003AF5E4 /* PersonDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		037E03A126C0AD8A003AF5E4 /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				037E03A226C0AD8A003AF5E4 /* ViewModel */,
+				037E03A326C0AD8A003AF5E4 /* View */,
+			);
+			path = PeopleList;
+			sourceTree = "<group>";
+		};
+		037E03A226C0AD8A003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03A326C0AD8A003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03A426C0AD8A003AF5E4 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		037E03A526C0AD8A003AF5E4 /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				037E03A626C0AD8A003AF5E4 /* ViewModel */,
+				037E03A726C0AD8A003AF5E4 /* View */,
+			);
+			path = PersonDetail;
+			sourceTree = "<group>";
+		};
+		037E03A626C0AD8A003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03A726C0AD8A003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03A826C0AD8A003AF5E4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		037E03A926C0AD8A003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03AA26C0AD8A003AF5E4 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		037E03AB26C0AD8A003AF5E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				037E03AC26C0AD8A003AF5E4 /* DI */,
+				037E03AD26C0AD8A003AF5E4 /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		037E03AC26C0AD8A003AF5E4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		037E03AD26C0AD8A003AF5E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E03AE26C0AD8A003AF5E4 /* ViewModel */,
+				037E03AF26C0AD8A003AF5E4 /* Entity */,
+				037E03B026C0AD8A003AF5E4 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		037E03AE26C0AD8A003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03AF26C0AD8A003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03B026C0AD8A003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03B126C0AD8A003AF5E4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				037E03B226C0AD8A003AF5E4 /* DI */,
+				037E03B326C0AD8A003AF5E4 /* Network */,
+				037E03B926C0AD8B003AF5E4 /* Data */,
+				037E03BC26C0AD8B003AF5E4 /* Domain */,
+				037E03BD26C0AD8B003AF5E4 /* Presentation */,
+				037E03C126C0AD8B003AF5E4 /* Localizable */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		037E03B226C0AD8A003AF5E4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		037E03B326C0AD8A003AF5E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				037E03B426C0AD8A003AF5E4 /* DI */,
+				037E03B526C0AD8B003AF5E4 /* Entity */,
+				037E03B626C0AD8B003AF5E4 /* Decoder */,
+				037E03B726C0AD8B003AF5E4 /* Manager */,
+				037E03B826C0AD8B003AF5E4 /* Session */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		037E03B426C0AD8A003AF5E4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		037E03B526C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03B626C0AD8B003AF5E4 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		037E03B726C0AD8B003AF5E4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		037E03B826C0AD8B003AF5E4 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		037E03B926C0AD8B003AF5E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				037E03BA26C0AD8B003AF5E4 /* Entity */,
+				037E03BB26C0AD8B003AF5E4 /* LocalStorage */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		037E03BA26C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03BB26C0AD8B003AF5E4 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		037E03BC26C0AD8B003AF5E4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		037E03BD26C0AD8B003AF5E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E03BE26C0AD8B003AF5E4 /* Entity */,
+				037E03BF26C0AD8B003AF5E4 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		037E03BE26C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03BF26C0AD8B003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				037E03C026C0AD8B003AF5E4 /* Loader */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03C026C0AD8B003AF5E4 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		037E03C126C0AD8B003AF5E4 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		037E03C226C0AD8B003AF5E4 /* BaseAlert */ = {
+			isa = PBXGroup;
+			children = (
+				037E03C326C0AD8B003AF5E4 /* Presentation */,
+			);
+			path = BaseAlert;
+			sourceTree = "<group>";
+		};
+		037E03C326C0AD8B003AF5E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E03C426C0AD8B003AF5E4 /* Entity */,
+				037E03C526C0AD8B003AF5E4 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		037E03C426C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03C526C0AD8B003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03C626C0AD8B003AF5E4 /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				037E03C726C0AD8B003AF5E4 /* DI */,
+				037E03C826C0AD8B003AF5E4 /* Data */,
+				037E03CD26C0AD8B003AF5E4 /* Domain */,
+				037E03D126C0AD8B003AF5E4 /* Presentation */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
+		037E03C726C0AD8B003AF5E4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		037E03C826C0AD8B003AF5E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				037E03C926C0AD8B003AF5E4 /* DataSource */,
+				037E03CA26C0AD8B003AF5E4 /* Repository */,
+				037E03CB26C0AD8B003AF5E4 /* Entity */,
+				037E03CC26C0AD8B003AF5E4 /* Mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		037E03C926C0AD8B003AF5E4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				037E03E426C0ADD0003AF5E4 /* ShowsLocalDataSourceImplTests.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		037E03CA26C0AD8B003AF5E4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		037E03CB26C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03CC26C0AD8B003AF5E4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		037E03CD26C0AD8B003AF5E4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				037E03CE26C0AD8B003AF5E4 /* Entity */,
+				037E03CF26C0AD8B003AF5E4 /* Mapper */,
+				037E03D026C0AD8B003AF5E4 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		037E03CE26C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03CF26C0AD8B003AF5E4 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		037E03D026C0AD8B003AF5E4 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		037E03D126C0AD8B003AF5E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E03D226C0AD8B003AF5E4 /* Scenes */,
+				037E03DC26C0AD8B003AF5E4 /* Coordinator */,
+				037E03DD26C0AD8B003AF5E4 /* Entity */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		037E03D226C0AD8B003AF5E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				037E03D326C0AD8B003AF5E4 /* ShowsList */,
+				037E03D626C0AD8B003AF5E4 /* ShowDetail */,
+				037E03D926C0AD8B003AF5E4 /* Episode */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		037E03D326C0AD8B003AF5E4 /* ShowsList */ = {
+			isa = PBXGroup;
+			children = (
+				037E03D426C0AD8B003AF5E4 /* ViewModel */,
+				037E03D526C0AD8B003AF5E4 /* View */,
+			);
+			path = ShowsList;
+			sourceTree = "<group>";
+		};
+		037E03D426C0AD8B003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03D526C0AD8B003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03D626C0AD8B003AF5E4 /* ShowDetail */ = {
+			isa = PBXGroup;
+			children = (
+				037E03D726C0AD8B003AF5E4 /* ViewModel */,
+				037E03D826C0AD8B003AF5E4 /* View */,
+			);
+			path = ShowDetail;
+			sourceTree = "<group>";
+		};
+		037E03D726C0AD8B003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03D826C0AD8B003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03D926C0AD8B003AF5E4 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				037E03DA26C0AD8B003AF5E4 /* ViewModel */,
+				037E03DB26C0AD8B003AF5E4 /* View */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		037E03DA26C0AD8B003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03DB26C0AD8B003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03DC26C0AD8B003AF5E4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		037E03DD26C0AD8B003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		037E03DE26C0AD8B003AF5E4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				037E03DF26C0AD8B003AF5E4 /* DI */,
+				037E03E026C0AD8B003AF5E4 /* Presentation */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		037E03DF26C0AD8B003AF5E4 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		037E03E026C0AD8B003AF5E4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E03E126C0AD8B003AF5E4 /* ViewModel */,
+				037E03E226C0AD8B003AF5E4 /* Coordinator */,
+				037E03E326C0AD8B003AF5E4 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		037E03E126C0AD8B003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E03E226C0AD8B003AF5E4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		037E03E326C0AD8B003AF5E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037E03E726C0AEB6003AF5E4 /* Build-Phases */ = {
+			isa = PBXGroup;
+			children = (
+				037E03E826C0AEE9003AF5E4 /* generate-mock-files.sh */,
+			);
+			path = "Build-Phases";
+			sourceTree = "<group>";
+		};
 		0398BEB426BB902B00F7B9D2 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -1035,6 +1681,7 @@
 				03E19E9E26BB22BA00725055 /* DI */,
 				03CA565826BB6BD200DD8681 /* Data */,
 				0398BECE26BB989B00F7B9D2 /* Domain */,
+				036FA7EE26BB7DE0005E1069 /* Localizable */,
 				0398BEE626BB9DB900F7B9D2 /* Network */,
 				03E19EB626BB256900725055 /* Presentation */,
 			);
@@ -1108,7 +1755,6 @@
 				030AFAC126C0784B00C64344 /* People */,
 				03E19EA126BB22F700725055 /* Shows */,
 				03E19EA426BB234700725055 /* Welcome */,
-				036FA7EE26BB7DE0005E1069 /* Localizable */,
 				03CA566226BB788900DD8681 /* SwiftGen */,
 				03E19E6E26BB215E00725055 /* AppDelegate.swift */,
 				03E19E7726BB216000725055 /* Assets.xcassets */,
@@ -1123,8 +1769,16 @@
 		03E19E8426BB216000725055 /* TVMazeTests */ = {
 			isa = PBXGroup;
 			children = (
-				03E19E8526BB216000725055 /* TV_MazeTests.swift */,
+				037E03C226C0AD8B003AF5E4 /* BaseAlert */,
+				037E03AB26C0AD8A003AF5E4 /* Home */,
+				037E039426C0AD8A003AF5E4 /* People */,
+				037E03B126C0AD8A003AF5E4 /* Shared */,
+				037E03C626C0AD8B003AF5E4 /* Shows */,
+				037E03AA26C0AD8A003AF5E4 /* SwiftGen */,
+				037E03DE26C0AD8B003AF5E4 /* Welcome */,
 				03E19E8726BB216000725055 /* Info.plist */,
+				037E03EC26C0B21E003AF5E4 /* GeneratedMocks.swift */,
+				037E03E726C0AEB6003AF5E4 /* Build-Phases */,
 			);
 			path = TVMazeTests;
 			sourceTree = "<group>";
@@ -1315,9 +1969,11 @@
 			buildConfigurationList = 03E19E9826BB216000725055 /* Build configuration list for PBXNativeTarget "TVMazeTests" */;
 			buildPhases = (
 				48683AD6BEB4090296A1A85C /* [CP] Check Pods Manifest.lock */,
+				037E03EB26C0B073003AF5E4 /* Generate Mock files */,
 				03E19E7D26BB216000725055 /* Sources */,
 				03E19E7E26BB216000725055 /* Frameworks */,
 				03E19E7F26BB216000725055 /* Resources */,
+				B1AFB1E16A6F1DF52DBC9260 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1371,6 +2027,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037E03F026C0B2B7003AF5E4 /* generate-mock-files.sh in Resources */,
 				030AFAFB26C079BF00C64344 /* PersonDetailHeaderView.xib in Resources */,
 				030AFAF626C079BF00C64344 /* PeopleListTableViewCell.xib in Resources */,
 				030AFA8726BEE06300C64344 /* ShowEpisodeViewController.xib in Resources */,
@@ -1403,6 +2060,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		037E03EB26C0B073003AF5E4 /* Generate Mock files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mock files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/TVMazeTests/Build-Phases/generate-mock-files.sh\n";
+		};
 		03CA566026BB6FD900DD8681 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1461,6 +2136,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B1AFB1E16A6F1DF52DBC9260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B7BDCD6DC4C398E7FCB10DC3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1507,6 +2199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037E03EF26C0B2A6003AF5E4 /* XCAssets+Generated.swift in Sources */,
 				030AFA9B26BEEA6A00C64344 /* LocalStorage.swift in Sources */,
 				0398BED426BB9A0100F7B9D2 /* AnyClosureUseCase.swift in Sources */,
 				03E19EAD26BB23D400725055 /* WelcomeModule.swift in Sources */,
@@ -1563,7 +2256,6 @@
 				030AFB1426C07AB700C64344 /* UiPerson.swift in Sources */,
 				037E038426C096D5003AF5E4 /* Cast.swift in Sources */,
 				030AFB0326C079BF00C64344 /* PeopleCoordinator.swift in Sources */,
-				03CA570E26BB7B5C00DD8681 /* XCAssets+Generated.swift in Sources */,
 				030AFB0D26C07A1800C64344 /* PeopleDataMapperImpl.swift in Sources */,
 				0348A4DC26BE100D008C5AD8 /* Image.swift in Sources */,
 				03E19EBD26BB26E300725055 /* BaseAlertViewArgs.swift in Sources */,
@@ -1670,7 +2362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E19E8626BB216000725055 /* TV_MazeTests.swift in Sources */,
+				037E03F126C0B404003AF5E4 /* GeneratedMocks.swift in Sources */,
+				037E03E526C0ADD0003AF5E4 /* ShowsLocalDataSourceImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,5 +12,5 @@ disabled_rules:
   - function_parameter_count
 excluded:
   - Pods
-  - now-app-iosTests/GeneratedMocks.swift
+  - TVMazeTests/GeneratedMocks.swift
 reporter: "xcode"

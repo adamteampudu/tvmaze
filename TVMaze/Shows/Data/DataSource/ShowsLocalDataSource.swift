@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ShowsLocalDataSource {
-    func update(showId: Int, asFavorite: Bool)
+    func update(showId: Int, asFavorite: Bool) -> Bool
     func getFavorites() -> [Int]
 }

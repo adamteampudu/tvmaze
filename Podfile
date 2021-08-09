@@ -16,7 +16,9 @@ target 'TVMaze' do
 
   target 'TVMazeTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'RxBlocking', '6.1.0'
+    pod 'RxTest', '6.1.0'
+    pod 'Cuckoo', '1.5.0'
   end
 
 end
