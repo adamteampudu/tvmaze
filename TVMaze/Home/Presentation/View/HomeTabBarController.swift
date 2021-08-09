@@ -50,14 +50,14 @@ class HomeTabBarController: UITabBarController {
     private func setTabBarItems() {
         showsListViewController.tabBarItem = UITabBarItem(
             title: L10n.shows,
-            image: nil,
+            image: Asset.Assets.tv.image.withRenderingMode(.alwaysTemplate),
             selectedImage: nil
         )
         showsListViewController.tabBarItem.tag = TabBarItemType.shows.rawValue
 
         peopleListViewController.tabBarItem = UITabBarItem(
             title: L10n.people,
-            image: nil,
+            image: Asset.Assets.person.image.withRenderingMode(.alwaysTemplate),
             selectedImage: nil
         )
         peopleListViewController.tabBarItem.tag = TabBarItemType.people.rawValue

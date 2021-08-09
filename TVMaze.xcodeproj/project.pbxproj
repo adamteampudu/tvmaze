@@ -384,14 +384,10 @@
 		03E19EC626BB27F400725055 /* BaseAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseAlertViewController.xib; sourceTree = "<group>"; };
 		2B909AAD344EA3B24245929C /* Pods-TVMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMaze.release.xcconfig"; path = "Target Support Files/Pods-TVMaze/Pods-TVMaze.release.xcconfig"; sourceTree = "<group>"; };
 		3A6FE15E2222C8AA0A63A29B /* Pods_TVMaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44E176E342B4D89F2C0DE0F6 /* Pods-TV MazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV MazeTests.release.xcconfig"; path = "Target Support Files/Pods-TV MazeTests/Pods-TV MazeTests.release.xcconfig"; sourceTree = "<group>"; };
-		4C5118C119F98958848D5C22 /* Pods-TV Maze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Maze.release.xcconfig"; path = "Target Support Files/Pods-TV Maze/Pods-TV Maze.release.xcconfig"; sourceTree = "<group>"; };
 		5A8551BFE353FB8AFA1D8C85 /* Pods-TVMazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMazeTests.debug.xcconfig"; path = "Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		67D83C0613EAF9BDE565A6AD /* Pods-TVMazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMazeTests.release.xcconfig"; path = "Target Support Files/Pods-TVMazeTests/Pods-TVMazeTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B58544770BC2A637C5C8398 /* Pods-TVMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVMaze.debug.xcconfig"; path = "Target Support Files/Pods-TVMaze/Pods-TVMaze.debug.xcconfig"; sourceTree = "<group>"; };
 		85ECA8C7B2AFBFD45EEA9635 /* Pods_TVMazeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMazeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9ADC182D65B32405872C0D3 /* Pods-TV Maze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Maze.debug.xcconfig"; path = "Target Support Files/Pods-TV Maze/Pods-TV Maze.debug.xcconfig"; sourceTree = "<group>"; };
-		E20EB76499482AA7D78F3F08 /* Pods-TV MazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV MazeTests.debug.xcconfig"; path = "Target Support Files/Pods-TV MazeTests/Pods-TV MazeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1928,10 +1924,6 @@
 		65F167A62A3AAED9692FDFD8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B9ADC182D65B32405872C0D3 /* Pods-TV Maze.debug.xcconfig */,
-				4C5118C119F98958848D5C22 /* Pods-TV Maze.release.xcconfig */,
-				E20EB76499482AA7D78F3F08 /* Pods-TV MazeTests.debug.xcconfig */,
-				44E176E342B4D89F2C0DE0F6 /* Pods-TV MazeTests.release.xcconfig */,
 				6B58544770BC2A637C5C8398 /* Pods-TVMaze.debug.xcconfig */,
 				2B909AAD344EA3B24245929C /* Pods-TVMaze.release.xcconfig */,
 				5A8551BFE353FB8AFA1D8C85 /* Pods-TVMazeTests.debug.xcconfig */,
