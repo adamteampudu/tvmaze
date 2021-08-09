@@ -68,3 +68,12 @@ After clicking on an episode, the application should show the episode’s inform
 
 ![alt text](doc/images/1.png)
 ![alt text](doc/images/2.png)
+![alt text](doc/images/3.png)
+![alt text](doc/images/4.png)
+![alt text](doc/images/5.png)
+![alt text](doc/images/6.png)
+![alt text](doc/images/7.png)
+![alt text](doc/images/8.png)
+![alt text](doc/images/9.png)
+![alt text](doc/images/10.png)
+![alt text](doc/images/11.png)
