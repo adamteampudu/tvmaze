@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApiSchedule: Decodable {
+struct ApiSchedule: Decodable, Equatable {
     let time: String?
     let days: [String]?
 }

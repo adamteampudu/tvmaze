@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UiSchedule: Decodable {
+struct UiSchedule: Equatable {
     let time: String?
     let days: [String]?
 }

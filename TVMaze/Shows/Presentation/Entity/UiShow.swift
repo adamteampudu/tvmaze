@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UiShow: Decodable {
+struct UiShow: Equatable {
     let id: Int
     let url: URL
     let name: String

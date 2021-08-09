@@ -20,4 +20,17 @@ enum ServerConstants {
         static let showSeasons = "\(basePath)/%@/episodes"
     }
 
+    enum Search {
+        private static let basePath = "search"
+        static let shows = "\(basePath)"
+        static let people = "\(basePath)/people?q=%@"
+    }
+
+    enum People {
+        private static let basePath = "people"
+        static let person = "\(basePath)/%@"
+        static let cast = "\(basePath)/%@/castcredits?embed=show"
+        static let crew = "\(basePath)/%@/crewcredits?embed=show"
+    }
+
 }

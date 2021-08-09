@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Links: Decodable, Equatable {
-    let linksSelf: NextEpisode?
-    let previousepisode: NextEpisode?
-    let nextepisode: NextEpisode?
+struct Links: Equatable {
+    let linksSelf: Link?
+    let previousepisode: Link?
+    let nextepisode: Link?
 }

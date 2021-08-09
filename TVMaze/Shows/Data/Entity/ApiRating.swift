@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ApiRating: Decodable {
+struct ApiRating: Decodable, Equatable {
     let average: Double?
 }

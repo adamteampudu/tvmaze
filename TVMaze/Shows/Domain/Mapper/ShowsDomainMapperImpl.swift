@@ -58,9 +58,9 @@ struct ShowsDomainMapperImpl: ShowsDomainMapper {
                 summary: $0.summary,
                 updated: $0.updated,
                 links: UiLinks(
-                    linksSelf: UiNextEpisode(href: $0.links?.linksSelf?.href),
-                    previousepisode: UiNextEpisode(href: $0.links?.previousepisode?.href),
-                    nextepisode: UiNextEpisode(href: $0.links?.nextepisode?.href)
+                    linksSelf: UiLink(href: $0.links?.linksSelf?.href),
+                    previousepisode: UiLink(href: $0.links?.previousepisode?.href),
+                    nextepisode: UiLink(href: $0.links?.nextepisode?.href)
                 )
             )
         }
@@ -81,9 +81,9 @@ struct ShowsDomainMapperImpl: ShowsDomainMapper {
                 image: UiImage(medium: $0.image?.medium, original: $0.image?.original),
                 summary: $0.summary,
                 links: UiLinks(
-                    linksSelf: UiNextEpisode(href: $0.links?.linksSelf?.href) ,
-                    previousepisode: UiNextEpisode(href: $0.links?.previousepisode?.href),
-                    nextepisode: UiNextEpisode(href: $0.links?.nextepisode?.href)
+                    linksSelf: UiLink(href: $0.links?.linksSelf?.href) ,
+                    previousepisode: UiLink(href: $0.links?.previousepisode?.href),
+                    nextepisode: UiLink(href: $0.links?.nextepisode?.href)
                 )
             )
         }

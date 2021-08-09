@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Show: Decodable {
+struct Show: Equatable {
     let id: Int
     let url: URL
     let name: String

@@ -59,9 +59,9 @@ struct ShowsDataMapperImpl: ShowsDataMapper {
                 summary: $0.summary,
                 updated: $0.updated,
                 links: Links(
-                    linksSelf: NextEpisode(href: $0.links?.linksSelf.href),
-                    previousepisode: NextEpisode(href: $0.links?.previousepisode?.href),
-                    nextepisode: NextEpisode(href: $0.links?.nextepisode?.href)
+                    linksSelf: Link(href: $0.links?.linksSelf.href),
+                    previousepisode: Link(href: $0.links?.previousepisode?.href),
+                    nextepisode: Link(href: $0.links?.nextepisode?.href)
                 )
             )
         }
@@ -83,9 +83,9 @@ struct ShowsDataMapperImpl: ShowsDataMapper {
                 image: Image(medium: $0.image?.medium, original: $0.image?.original),
                 summary: $0.summary,
                 links: Links(
-                    linksSelf: NextEpisode(href: $0.links?.linksSelf.href) ,
-                    previousepisode: NextEpisode(href: $0.links?.previousepisode?.href),
-                    nextepisode: NextEpisode(href: $0.links?.nextepisode?.href)
+                    linksSelf: Link(href: $0.links?.linksSelf.href) ,
+                    previousepisode: Link(href: $0.links?.previousepisode?.href),
+                    nextepisode: Link(href: $0.links?.nextepisode?.href)
                 )
             )
         }

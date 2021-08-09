@@ -23,7 +23,7 @@ final class WelcomeCoordinator: Coordinator {
     func goToSeriesList(from viewController: UIViewController) {
         pushViewController(
             viewController: viewController,
-            newViewControllerType: ShowsListViewController.self
+            newViewControllerType: HomeTabBarController.self
         )
     }
 }

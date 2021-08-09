@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ApiExternals: Decodable {
-    let tvrage: Int
+struct ApiExternals: Decodable, Equatable {
+    let tvrage: Int?
     let thetvdb: Int?
     let imdb: String?
 }

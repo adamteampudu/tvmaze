@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UiCountry: Decodable {
+struct UiCountry: Equatable {
     let name: String?
     let code: String?
     let timezone: String?

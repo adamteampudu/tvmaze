@@ -25,6 +25,8 @@ final class Injection {
         NetworkModule(container).inject()
         ShowsModule(container).inject()
         WelcomeModule(container).inject()
+        HomeModule(container).inject()
+        PeopleModule(container).inject()
         mainModule.inject()
     }
 

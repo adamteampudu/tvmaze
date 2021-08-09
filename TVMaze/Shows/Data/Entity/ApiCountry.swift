@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApiCountry: Decodable {
+struct ApiCountry: Decodable, Equatable {
     let name: String
     let code: String
     let timezone: String

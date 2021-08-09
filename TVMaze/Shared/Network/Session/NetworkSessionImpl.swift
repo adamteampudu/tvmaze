@@ -79,6 +79,7 @@ final class NetworkSessionImpl: NetworkSession {
                 let dataAsObject: R = try decoder.decodeJson(dataAsJson: dataAsJson)
                 onCompletion(ApiResult.success(data: dataAsObject))
             } catch {
+                debugPrint(error)
                 onCompletion(ApiResult.error(error: .general(error)))
             }
         } else {

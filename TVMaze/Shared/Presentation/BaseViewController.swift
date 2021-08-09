@@ -66,7 +66,8 @@ class BaseViewController<V: BaseViewModel, C: Coordinator>: UIViewController {
     func subscribe<T>(observable: Observable<T>, action: @escaping (T) -> Void) {
         observable.subscribe(onNext: { data in
             action(data)
-        }).disposed(by: disposeBag)
+        })
+        .disposed(by: disposeBag)
     }
 
     func listen<T>(observable: Observable<T>, action: @escaping (T?) -> Void, complete: @escaping () -> Void) {
@@ -83,7 +84,7 @@ class BaseViewController<V: BaseViewModel, C: Coordinator>: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: Asset.Colors.background.color,
             NSAttributedString.Key.font: UIFont.systemFont(
-                ofSize: TextSize.body,
+                ofSize: TextSize.header,
                 weight: UIFont.Weight.regular
             )
         ]

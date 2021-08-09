@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Network: Decodable {
+struct Network: Equatable {
     let id: Int?
     let name: String?
     let country: Country?

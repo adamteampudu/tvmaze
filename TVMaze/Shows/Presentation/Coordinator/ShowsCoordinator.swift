@@ -10,15 +10,12 @@ import UIKit
 final class ShowsCoordinator: Coordinator {
 
     enum GoToScene {
-        case popToWelcomeScreen
         case pushToShowDetail(ShowDetailViewArgs)
         case pushToShowEpisode(ShowEpisodeViewArgs)
     }
 
     func goToScene(_ scene: GoToScene, from viewController: UIViewController) {
         switch scene {
-        case .popToWelcomeScreen:
-            debugPrint("pop")
         case let .pushToShowDetail(args):
             pushViewController(
                 viewController: viewController,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApiNetwork: Decodable {
+struct ApiNetwork: Decodable, Equatable {
     let id: Int
     let name: String
     let country: ApiCountry?

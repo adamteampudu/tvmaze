@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct UiRating: Decodable {
+struct UiRating: Equatable {
     let average: Double?
 }

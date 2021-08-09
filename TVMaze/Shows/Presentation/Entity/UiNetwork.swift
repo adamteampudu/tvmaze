@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UiNetwork: Decodable {
+struct UiNetwork: Equatable {
     let id: Int?
     let name: String?
     let country: UiCountry?

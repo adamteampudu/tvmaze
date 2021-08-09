@@ -8,9 +8,9 @@
 import Foundation
 
 struct ApiLinks: Decodable, Equatable {
-    let linksSelf: ApiNextEpisode
-    let previousepisode: ApiNextEpisode?
-    let nextepisode: ApiNextEpisode?
+    let linksSelf: ApiLink
+    let previousepisode: ApiLink?
+    let nextepisode: ApiLink?
 
     enum CodingKeys: String, CodingKey {
         case linksSelf = "self"

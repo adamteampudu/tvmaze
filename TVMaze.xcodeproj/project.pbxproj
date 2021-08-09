@@ -27,6 +27,37 @@
 		030AFAB526C0298D00C64344 /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030AFAB126C0298D00C64344 /* LoaderView.xib */; };
 		030AFAB626C0298D00C64344 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAB226C0298D00C64344 /* LoaderView.swift */; };
 		030AFAB726C0298D00C64344 /* LoaderBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAB326C0298D00C64344 /* LoaderBuffer.swift */; };
+		030AFABC26C0763B00C64344 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFABB26C0763B00C64344 /* HomeTabBarController.swift */; };
+		030AFAC026C0772400C64344 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFABF26C0772400C64344 /* HomeModule.swift */; };
+		030AFAF226C079BF00C64344 /* GetPeopleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAC626C079BF00C64344 /* GetPeopleUseCase.swift */; };
+		030AFAF326C079BF00C64344 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFACB26C079BF00C64344 /* PeopleListViewModel.swift */; };
+		030AFAF426C079BF00C64344 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFACD26C079BF00C64344 /* PeopleListViewController.swift */; };
+		030AFAF526C079BF00C64344 /* PeopleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030AFACE26C079BF00C64344 /* PeopleListViewController.xib */; };
+		030AFAF626C079BF00C64344 /* PeopleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030AFACF26C079BF00C64344 /* PeopleListTableViewCell.xib */; };
+		030AFAF726C079BF00C64344 /* PeopleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAD026C079BF00C64344 /* PeopleListTableViewCell.swift */; };
+		030AFAF826C079BF00C64344 /* PersonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAD326C079BF00C64344 /* PersonDetailViewModel.swift */; };
+		030AFAF926C079BF00C64344 /* PersonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAD526C079BF00C64344 /* PersonDetailHeaderView.swift */; };
+		030AFAFA26C079BF00C64344 /* PersonDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAD626C079BF00C64344 /* PersonDetailTableViewCell.swift */; };
+		030AFAFB26C079BF00C64344 /* PersonDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030AFAD726C079BF00C64344 /* PersonDetailHeaderView.xib */; };
+		030AFAFC26C079BF00C64344 /* PersonDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030AFAD826C079BF00C64344 /* PersonDetailTableViewCell.xib */; };
+		030AFAFD26C079BF00C64344 /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030AFAD926C079BF00C64344 /* PersonDetailViewController.xib */; };
+		030AFAFE26C079BF00C64344 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFADA26C079BF00C64344 /* PersonDetailViewController.swift */; };
+		030AFAFF26C079BF00C64344 /* PersonDetailSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFADB26C079BF00C64344 /* PersonDetailSectionHeaderView.swift */; };
+		030AFB0326C079BF00C64344 /* PeopleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAE326C079BF00C64344 /* PeopleCoordinator.swift */; };
+		030AFB0426C079BF00C64344 /* PeopleRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAE726C079BF00C64344 /* PeopleRemoteDataSource.swift */; };
+		030AFB0526C079BF00C64344 /* PeopleRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAE826C079BF00C64344 /* PeopleRemoteDataSourceImpl.swift */; };
+		030AFB0826C079BF00C64344 /* PeopleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAEC26C079BF00C64344 /* PeopleDataSource.swift */; };
+		030AFB0926C079BF00C64344 /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAED26C079BF00C64344 /* PeopleRepository.swift */; };
+		030AFB0A26C079BF00C64344 /* PeopleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFAF126C079BF00C64344 /* PeopleModule.swift */; };
+		030AFB0D26C07A1800C64344 /* PeopleDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB0B26C07A1800C64344 /* PeopleDataMapperImpl.swift */; };
+		030AFB0E26C07A1800C64344 /* PeopleDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB0C26C07A1800C64344 /* PeopleDataMapper.swift */; };
+		030AFB1126C07A5600C64344 /* PeopleDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB0F26C07A5600C64344 /* PeopleDomainMapper.swift */; };
+		030AFB1226C07A5600C64344 /* PeopleDomainMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB1026C07A5600C64344 /* PeopleDomainMapperImpl.swift */; };
+		030AFB1426C07AB700C64344 /* UiPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB1326C07AB700C64344 /* UiPerson.swift */; };
+		030AFB1626C07D6E00C64344 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB1526C07D6E00C64344 /* Person.swift */; };
+		030AFB1826C07DAC00C64344 /* ApiPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB1726C07DAC00C64344 /* ApiPerson.swift */; };
+		030AFB1A26C07E3000C64344 /* PersonViewArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB1926C07E3000C64344 /* PersonViewArgs.swift */; };
+		030AFB1E26C0833900C64344 /* PersonDetailViewArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030AFB1D26C0833900C64344 /* PersonDetailViewArgs.swift */; };
 		030E8E4326BE320E00CF6CD5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E8E4226BE320E00CF6CD5 /* String+Extension.swift */; };
 		030E8E4626BE380300CF6CD5 /* ShowDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E8E4426BE380300CF6CD5 /* ShowDetailHeaderView.swift */; };
 		030E8E4726BE380300CF6CD5 /* ShowDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E8E4526BE380300CF6CD5 /* ShowDetailHeaderView.xib */; };
@@ -40,7 +71,7 @@
 		0313360626BE2463008E1D6E /* ShowDetailViewArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313360526BE2463008E1D6E /* ShowDetailViewArgs.swift */; };
 		0348A4C926BE0E4D008C5AD8 /* ApiExternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C226BE0E4D008C5AD8 /* ApiExternals.swift */; };
 		0348A4CA26BE0E4D008C5AD8 /* ApiCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C326BE0E4D008C5AD8 /* ApiCountry.swift */; };
-		0348A4CB26BE0E4D008C5AD8 /* ApiNextEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C426BE0E4D008C5AD8 /* ApiNextEpisode.swift */; };
+		0348A4CB26BE0E4D008C5AD8 /* ApiLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C426BE0E4D008C5AD8 /* ApiLink.swift */; };
 		0348A4CC26BE0E4D008C5AD8 /* ApiRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C526BE0E4D008C5AD8 /* ApiRating.swift */; };
 		0348A4CD26BE0E4D008C5AD8 /* ApiLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C626BE0E4D008C5AD8 /* ApiLinks.swift */; };
 		0348A4CE26BE0E4D008C5AD8 /* ApiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4C726BE0E4D008C5AD8 /* ApiImage.swift */; };
@@ -52,12 +83,12 @@
 		0348A4DD26BE100D008C5AD8 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4D526BE100D008C5AD8 /* Country.swift */; };
 		0348A4DE26BE100D008C5AD8 /* Externals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4D626BE100D008C5AD8 /* Externals.swift */; };
 		0348A4DF26BE100D008C5AD8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4D726BE100D008C5AD8 /* Network.swift */; };
-		0348A4E026BE100D008C5AD8 /* NextEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4D826BE100D008C5AD8 /* NextEpisode.swift */; };
+		0348A4E026BE100D008C5AD8 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4D826BE100D008C5AD8 /* Link.swift */; };
 		0348A4E126BE100D008C5AD8 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4D926BE100D008C5AD8 /* Links.swift */; };
 		0348A4EB26BE10AB008C5AD8 /* UiLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E226BE10AA008C5AD8 /* UiLinks.swift */; };
 		0348A4EC26BE10AB008C5AD8 /* UiExternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E326BE10AA008C5AD8 /* UiExternals.swift */; };
 		0348A4ED26BE10AB008C5AD8 /* UiShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E426BE10AA008C5AD8 /* UiShow.swift */; };
-		0348A4EE26BE10AB008C5AD8 /* UiNextEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E526BE10AB008C5AD8 /* UiNextEpisode.swift */; };
+		0348A4EE26BE10AB008C5AD8 /* UiLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E526BE10AB008C5AD8 /* UiLink.swift */; };
 		0348A4EF26BE10AB008C5AD8 /* UiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E626BE10AB008C5AD8 /* UiNetwork.swift */; };
 		0348A4F026BE10AB008C5AD8 /* UiCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E726BE10AB008C5AD8 /* UiCountry.swift */; };
 		0348A4F126BE10AB008C5AD8 /* UiRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348A4E826BE10AB008C5AD8 /* UiRating.swift */; };
@@ -68,8 +99,27 @@
 		035B4A9426BEDB9A0061D6F5 /* ShowDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035B4A9226BEDB9A0061D6F5 /* ShowDetailTableViewCell.xib */; };
 		036FA7F826BB8159005E1069 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 036FA7F626BB8159005E1069 /* Localizable.strings */; };
 		036FA7FA26BB828F005E1069 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036FA7F926BB828F005E1069 /* WelcomeViewController.xib */; };
-		036FA7FD26BB86CF005E1069 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036FA7FC26BB86CF005E1069 /* UIButton+Extension.swift */; };
 		036FA7FF26BB87E9005E1069 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036FA7FE26BB87E9005E1069 /* TextSize.swift */; };
+		037E036C26C08C28003AF5E4 /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E036B26C08C28003AF5E4 /* HomeTabBarViewModel.swift */; };
+		037E036F26C08C74003AF5E4 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E036E26C08C74003AF5E4 /* TabBarItemType.swift */; };
+		037E037126C08EF2003AF5E4 /* GetPersonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037026C08EF2003AF5E4 /* GetPersonUseCase.swift */; };
+		037E037326C09485003AF5E4 /* ApiCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037226C09485003AF5E4 /* ApiCast.swift */; };
+		037E037526C0949A003AF5E4 /* ApiCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037426C0949A003AF5E4 /* ApiCrew.swift */; };
+		037E037726C09512003AF5E4 /* ApiPersonCrewLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037626C09512003AF5E4 /* ApiPersonCrewLinks.swift */; };
+		037E037926C09557003AF5E4 /* ApiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037826C09557003AF5E4 /* ApiCharacter.swift */; };
+		037E037B26C09576003AF5E4 /* ApiEmbeddedShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037A26C09576003AF5E4 /* ApiEmbeddedShow.swift */; };
+		037E038126C096D5003AF5E4 /* Embedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037C26C096D4003AF5E4 /* Embedded.swift */; };
+		037E038226C096D5003AF5E4 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037D26C096D4003AF5E4 /* Crew.swift */; };
+		037E038326C096D5003AF5E4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037E26C096D4003AF5E4 /* Character.swift */; };
+		037E038426C096D5003AF5E4 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E037F26C096D4003AF5E4 /* Cast.swift */; };
+		037E038526C096D5003AF5E4 /* PersonCrewLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038026C096D5003AF5E4 /* PersonCrewLinks.swift */; };
+		037E038B26C09744003AF5E4 /* UiCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038626C09744003AF5E4 /* UiCharacter.swift */; };
+		037E038C26C09744003AF5E4 /* UiCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038726C09744003AF5E4 /* UiCast.swift */; };
+		037E038D26C09744003AF5E4 /* UiPersonCrewLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038826C09744003AF5E4 /* UiPersonCrewLinks.swift */; };
+		037E038E26C09744003AF5E4 /* UiiEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038926C09744003AF5E4 /* UiiEmbedded.swift */; };
+		037E038F26C09744003AF5E4 /* UiCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E038A26C09744003AF5E4 /* UiCrew.swift */; };
+		037E039226C09B98003AF5E4 /* GetPersonCastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E039026C09B98003AF5E4 /* GetPersonCastUseCase.swift */; };
+		037E039326C09B98003AF5E4 /* GetPersonCrewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E039126C09B98003AF5E4 /* GetPersonCrewUseCase.swift */; };
 		0398BEB626BB903700F7B9D2 /* ShowsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398BEB526BB903700F7B9D2 /* ShowsCoordinator.swift */; };
 		0398BEB826BB92ED00F7B9D2 /* ShowsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0398BEB726BB92ED00F7B9D2 /* ShowsListViewController.xib */; };
 		0398BEBB26BB936600F7B9D2 /* ShowsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398BEB926BB936600F7B9D2 /* ShowsListTableViewCell.swift */; };
@@ -168,6 +218,37 @@
 		030AFAB126C0298D00C64344 /* LoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
 		030AFAB226C0298D00C64344 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		030AFAB326C0298D00C64344 /* LoaderBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderBuffer.swift; sourceTree = "<group>"; };
+		030AFABB26C0763B00C64344 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		030AFABF26C0772400C64344 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		030AFAC626C079BF00C64344 /* GetPeopleUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPeopleUseCase.swift; sourceTree = "<group>"; };
+		030AFACB26C079BF00C64344 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		030AFACD26C079BF00C64344 /* PeopleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		030AFACE26C079BF00C64344 /* PeopleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleListViewController.xib; sourceTree = "<group>"; };
+		030AFACF26C079BF00C64344 /* PeopleListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleListTableViewCell.xib; sourceTree = "<group>"; };
+		030AFAD026C079BF00C64344 /* PeopleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListTableViewCell.swift; sourceTree = "<group>"; };
+		030AFAD326C079BF00C64344 /* PersonDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewModel.swift; sourceTree = "<group>"; };
+		030AFAD526C079BF00C64344 /* PersonDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailHeaderView.swift; sourceTree = "<group>"; };
+		030AFAD626C079BF00C64344 /* PersonDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailTableViewCell.swift; sourceTree = "<group>"; };
+		030AFAD726C079BF00C64344 /* PersonDetailHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailHeaderView.xib; sourceTree = "<group>"; };
+		030AFAD826C079BF00C64344 /* PersonDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailTableViewCell.xib; sourceTree = "<group>"; };
+		030AFAD926C079BF00C64344 /* PersonDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
+		030AFADA26C079BF00C64344 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		030AFADB26C079BF00C64344 /* PersonDetailSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailSectionHeaderView.swift; sourceTree = "<group>"; };
+		030AFAE326C079BF00C64344 /* PeopleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCoordinator.swift; sourceTree = "<group>"; };
+		030AFAE726C079BF00C64344 /* PeopleRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRemoteDataSource.swift; sourceTree = "<group>"; };
+		030AFAE826C079BF00C64344 /* PeopleRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		030AFAEC26C079BF00C64344 /* PeopleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDataSource.swift; sourceTree = "<group>"; };
+		030AFAED26C079BF00C64344 /* PeopleRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
+		030AFAF126C079BF00C64344 /* PeopleModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleModule.swift; sourceTree = "<group>"; };
+		030AFB0B26C07A1800C64344 /* PeopleDataMapperImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDataMapperImpl.swift; sourceTree = "<group>"; };
+		030AFB0C26C07A1800C64344 /* PeopleDataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDataMapper.swift; sourceTree = "<group>"; };
+		030AFB0F26C07A5600C64344 /* PeopleDomainMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDomainMapper.swift; sourceTree = "<group>"; };
+		030AFB1026C07A5600C64344 /* PeopleDomainMapperImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDomainMapperImpl.swift; sourceTree = "<group>"; };
+		030AFB1326C07AB700C64344 /* UiPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiPerson.swift; sourceTree = "<group>"; };
+		030AFB1526C07D6E00C64344 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		030AFB1726C07DAC00C64344 /* ApiPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPerson.swift; sourceTree = "<group>"; };
+		030AFB1926C07E3000C64344 /* PersonViewArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewArgs.swift; sourceTree = "<group>"; };
+		030AFB1D26C0833900C64344 /* PersonDetailViewArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewArgs.swift; sourceTree = "<group>"; };
 		030E8E4226BE320E00CF6CD5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		030E8E4426BE380300CF6CD5 /* ShowDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailHeaderView.swift; sourceTree = "<group>"; };
 		030E8E4526BE380300CF6CD5 /* ShowDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailHeaderView.xib; sourceTree = "<group>"; };
@@ -181,7 +262,7 @@
 		0313360526BE2463008E1D6E /* ShowDetailViewArgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailViewArgs.swift; sourceTree = "<group>"; };
 		0348A4C226BE0E4D008C5AD8 /* ApiExternals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiExternals.swift; sourceTree = "<group>"; };
 		0348A4C326BE0E4D008C5AD8 /* ApiCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCountry.swift; sourceTree = "<group>"; };
-		0348A4C426BE0E4D008C5AD8 /* ApiNextEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiNextEpisode.swift; sourceTree = "<group>"; };
+		0348A4C426BE0E4D008C5AD8 /* ApiLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiLink.swift; sourceTree = "<group>"; };
 		0348A4C526BE0E4D008C5AD8 /* ApiRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRating.swift; sourceTree = "<group>"; };
 		0348A4C626BE0E4D008C5AD8 /* ApiLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiLinks.swift; sourceTree = "<group>"; };
 		0348A4C726BE0E4D008C5AD8 /* ApiImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiImage.swift; sourceTree = "<group>"; };
@@ -193,12 +274,12 @@
 		0348A4D526BE100D008C5AD8 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		0348A4D626BE100D008C5AD8 /* Externals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Externals.swift; sourceTree = "<group>"; };
 		0348A4D726BE100D008C5AD8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		0348A4D826BE100D008C5AD8 /* NextEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextEpisode.swift; sourceTree = "<group>"; };
+		0348A4D826BE100D008C5AD8 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		0348A4D926BE100D008C5AD8 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		0348A4E226BE10AA008C5AD8 /* UiLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiLinks.swift; sourceTree = "<group>"; };
 		0348A4E326BE10AA008C5AD8 /* UiExternals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiExternals.swift; sourceTree = "<group>"; };
 		0348A4E426BE10AA008C5AD8 /* UiShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiShow.swift; sourceTree = "<group>"; };
-		0348A4E526BE10AB008C5AD8 /* UiNextEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiNextEpisode.swift; sourceTree = "<group>"; };
+		0348A4E526BE10AB008C5AD8 /* UiLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiLink.swift; sourceTree = "<group>"; };
 		0348A4E626BE10AB008C5AD8 /* UiNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiNetwork.swift; sourceTree = "<group>"; };
 		0348A4E726BE10AB008C5AD8 /* UiCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiCountry.swift; sourceTree = "<group>"; };
 		0348A4E826BE10AB008C5AD8 /* UiRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiRating.swift; sourceTree = "<group>"; };
@@ -209,8 +290,27 @@
 		035B4A9226BEDB9A0061D6F5 /* ShowDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDetailTableViewCell.xib; sourceTree = "<group>"; };
 		036FA7F726BB8159005E1069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = TVMaze/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		036FA7F926BB828F005E1069 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
-		036FA7FC26BB86CF005E1069 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		036FA7FE26BB87E9005E1069 /* TextSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
+		037E036B26C08C28003AF5E4 /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
+		037E036E26C08C74003AF5E4 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
+		037E037026C08EF2003AF5E4 /* GetPersonUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonUseCase.swift; sourceTree = "<group>"; };
+		037E037226C09485003AF5E4 /* ApiCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCast.swift; sourceTree = "<group>"; };
+		037E037426C0949A003AF5E4 /* ApiCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCrew.swift; sourceTree = "<group>"; };
+		037E037626C09512003AF5E4 /* ApiPersonCrewLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPersonCrewLinks.swift; sourceTree = "<group>"; };
+		037E037826C09557003AF5E4 /* ApiCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCharacter.swift; sourceTree = "<group>"; };
+		037E037A26C09576003AF5E4 /* ApiEmbeddedShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEmbeddedShow.swift; sourceTree = "<group>"; };
+		037E037C26C096D4003AF5E4 /* Embedded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Embedded.swift; sourceTree = "<group>"; };
+		037E037D26C096D4003AF5E4 /* Crew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
+		037E037E26C096D4003AF5E4 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		037E037F26C096D4003AF5E4 /* Cast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
+		037E038026C096D5003AF5E4 /* PersonCrewLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCrewLinks.swift; sourceTree = "<group>"; };
+		037E038626C09744003AF5E4 /* UiCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiCharacter.swift; sourceTree = "<group>"; };
+		037E038726C09744003AF5E4 /* UiCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiCast.swift; sourceTree = "<group>"; };
+		037E038826C09744003AF5E4 /* UiPersonCrewLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiPersonCrewLinks.swift; sourceTree = "<group>"; };
+		037E038926C09744003AF5E4 /* UiiEmbedded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiiEmbedded.swift; sourceTree = "<group>"; };
+		037E038A26C09744003AF5E4 /* UiCrew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiCrew.swift; sourceTree = "<group>"; };
+		037E039026C09B98003AF5E4 /* GetPersonCastUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonCastUseCase.swift; sourceTree = "<group>"; };
+		037E039126C09B98003AF5E4 /* GetPersonCrewUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonCrewUseCase.swift; sourceTree = "<group>"; };
 		0398BEB526BB903700F7B9D2 /* ShowsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCoordinator.swift; sourceTree = "<group>"; };
 		0398BEB726BB92ED00F7B9D2 /* ShowsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowsListViewController.xib; sourceTree = "<group>"; };
 		0398BEB926BB936600F7B9D2 /* ShowsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListTableViewCell.swift; sourceTree = "<group>"; };
@@ -436,6 +536,255 @@
 			path = Loader;
 			sourceTree = "<group>";
 		};
+		030AFAB826C0760300C64344 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				030AFABE26C0771400C64344 /* DI */,
+				030AFAB926C0760900C64344 /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		030AFAB926C0760900C64344 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				037E036D26C08C64003AF5E4 /* Entity */,
+				037E036A26C08C18003AF5E4 /* ViewModel */,
+				030AFABA26C0761400C64344 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		030AFABA26C0761400C64344 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				030AFABB26C0763B00C64344 /* HomeTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		030AFABE26C0771400C64344 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				030AFABF26C0772400C64344 /* HomeModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		030AFAC126C0784B00C64344 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAF026C079BF00C64344 /* DI */,
+				030AFAE526C079BF00C64344 /* Data */,
+				030AFAC226C079BF00C64344 /* Domain */,
+				030AFAC726C079BF00C64344 /* Presentation */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		030AFAC226C079BF00C64344 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAC326C079BF00C64344 /* Entity */,
+				030AFAC426C079BF00C64344 /* Mapper */,
+				030AFAC526C079BF00C64344 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		030AFAC326C079BF00C64344 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				037E037F26C096D4003AF5E4 /* Cast.swift */,
+				037E037E26C096D4003AF5E4 /* Character.swift */,
+				037E037D26C096D4003AF5E4 /* Crew.swift */,
+				037E037C26C096D4003AF5E4 /* Embedded.swift */,
+				037E038026C096D5003AF5E4 /* PersonCrewLinks.swift */,
+				030AFB1526C07D6E00C64344 /* Person.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		030AFAC426C079BF00C64344 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				030AFB0F26C07A5600C64344 /* PeopleDomainMapper.swift */,
+				030AFB1026C07A5600C64344 /* PeopleDomainMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		030AFAC526C079BF00C64344 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				037E037026C08EF2003AF5E4 /* GetPersonUseCase.swift */,
+				030AFAC626C079BF00C64344 /* GetPeopleUseCase.swift */,
+				037E039026C09B98003AF5E4 /* GetPersonCastUseCase.swift */,
+				037E039126C09B98003AF5E4 /* GetPersonCrewUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		030AFAC726C079BF00C64344 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAC826C079BF00C64344 /* Scenes */,
+				030AFAE226C079BF00C64344 /* Coordinator */,
+				030AFAE426C079BF00C64344 /* Entity */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		030AFAC826C079BF00C64344 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAC926C079BF00C64344 /* PeopleList */,
+				030AFAD126C079BF00C64344 /* PersonDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		030AFAC926C079BF00C64344 /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				030AFACA26C079BF00C64344 /* ViewModel */,
+				030AFACC26C079BF00C64344 /* View */,
+			);
+			path = PeopleList;
+			sourceTree = "<group>";
+		};
+		030AFACA26C079BF00C64344 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				030AFACB26C079BF00C64344 /* PeopleListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		030AFACC26C079BF00C64344 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				030AFACD26C079BF00C64344 /* PeopleListViewController.swift */,
+				030AFACE26C079BF00C64344 /* PeopleListViewController.xib */,
+				030AFACF26C079BF00C64344 /* PeopleListTableViewCell.xib */,
+				030AFAD026C079BF00C64344 /* PeopleListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		030AFAD126C079BF00C64344 /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAD226C079BF00C64344 /* ViewModel */,
+				030AFAD426C079BF00C64344 /* View */,
+			);
+			path = PersonDetail;
+			sourceTree = "<group>";
+		};
+		030AFAD226C079BF00C64344 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAD326C079BF00C64344 /* PersonDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		030AFAD426C079BF00C64344 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				030AFADA26C079BF00C64344 /* PersonDetailViewController.swift */,
+				030AFAD926C079BF00C64344 /* PersonDetailViewController.xib */,
+				030AFAD526C079BF00C64344 /* PersonDetailHeaderView.swift */,
+				030AFAD726C079BF00C64344 /* PersonDetailHeaderView.xib */,
+				030AFAD626C079BF00C64344 /* PersonDetailTableViewCell.swift */,
+				030AFAD826C079BF00C64344 /* PersonDetailTableViewCell.xib */,
+				030AFADB26C079BF00C64344 /* PersonDetailSectionHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		030AFAE226C079BF00C64344 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAE326C079BF00C64344 /* PeopleCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		030AFAE426C079BF00C64344 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				030AFB1926C07E3000C64344 /* PersonViewArgs.swift */,
+				030AFB1D26C0833900C64344 /* PersonDetailViewArgs.swift */,
+				037E038726C09744003AF5E4 /* UiCast.swift */,
+				037E038626C09744003AF5E4 /* UiCharacter.swift */,
+				037E038A26C09744003AF5E4 /* UiCrew.swift */,
+				037E038926C09744003AF5E4 /* UiiEmbedded.swift */,
+				037E038826C09744003AF5E4 /* UiPersonCrewLinks.swift */,
+				030AFB1326C07AB700C64344 /* UiPerson.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		030AFAE526C079BF00C64344 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAE626C079BF00C64344 /* DataSource */,
+				030AFAEB26C079BF00C64344 /* Repository */,
+				030AFAEE26C079BF00C64344 /* Entity */,
+				030AFAEF26C079BF00C64344 /* Mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		030AFAE626C079BF00C64344 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAE726C079BF00C64344 /* PeopleRemoteDataSource.swift */,
+				030AFAE826C079BF00C64344 /* PeopleRemoteDataSourceImpl.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		030AFAEB26C079BF00C64344 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAEC26C079BF00C64344 /* PeopleDataSource.swift */,
+				030AFAED26C079BF00C64344 /* PeopleRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		030AFAEE26C079BF00C64344 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				030AFB1726C07DAC00C64344 /* ApiPerson.swift */,
+				037E037226C09485003AF5E4 /* ApiCast.swift */,
+				037E037426C0949A003AF5E4 /* ApiCrew.swift */,
+				037E037626C09512003AF5E4 /* ApiPersonCrewLinks.swift */,
+				037E037826C09557003AF5E4 /* ApiCharacter.swift */,
+				037E037A26C09576003AF5E4 /* ApiEmbeddedShow.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		030AFAEF26C079BF00C64344 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				030AFB0C26C07A1800C64344 /* PeopleDataMapper.swift */,
+				030AFB0B26C07A1800C64344 /* PeopleDataMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		030AFAF026C079BF00C64344 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				030AFAF126C079BF00C64344 /* PeopleModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		03214D20B2CA3F34C8FB51D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,7 +805,6 @@
 		036FA7FB26BB86BF005E1069 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				036FA7FC26BB86CF005E1069 /* UIButton+Extension.swift */,
 				0398BEC126BB941D00F7B9D2 /* Reusable+Extension.swift */,
 				0398BEC326BB959F00F7B9D2 /* SDWebImage+Extension.swift */,
 				0398BEC826BB973300F7B9D2 /* UITableViewCell+Extension.swift */,
@@ -464,6 +812,22 @@
 				030E8E4226BE320E00CF6CD5 /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		037E036A26C08C18003AF5E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				037E036B26C08C28003AF5E4 /* HomeTabBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		037E036D26C08C64003AF5E4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				037E036E26C08C74003AF5E4 /* TabBarItemType.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		0398BEB426BB902B00F7B9D2 /* Coordinator */ = {
@@ -482,7 +846,7 @@
 				0348A4EA26BE10AB008C5AD8 /* UiImage.swift */,
 				0348A4E226BE10AA008C5AD8 /* UiLinks.swift */,
 				0348A4E626BE10AB008C5AD8 /* UiNetwork.swift */,
-				0348A4E526BE10AB008C5AD8 /* UiNextEpisode.swift */,
+				0348A4E526BE10AB008C5AD8 /* UiLink.swift */,
 				0348A4E826BE10AB008C5AD8 /* UiRating.swift */,
 				0348A4E926BE10AB008C5AD8 /* UiSchedule.swift */,
 				0348A4E426BE10AA008C5AD8 /* UiShow.swift */,
@@ -496,8 +860,8 @@
 		0398BECA26BB981D00F7B9D2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				0398BEFD26BBA39E00F7B9D2 /* Mapper */,
 				0398BEE526BB9CE700F7B9D2 /* Entity */,
+				0398BEFD26BBA39E00F7B9D2 /* Mapper */,
 				0398BECB26BB983E00F7B9D2 /* UseCase */,
 			);
 			path = Domain;
@@ -564,7 +928,7 @@
 				0348A4C726BE0E4D008C5AD8 /* ApiImage.swift */,
 				0348A4C626BE0E4D008C5AD8 /* ApiLinks.swift */,
 				0348A4D026BE0ED4008C5AD8 /* ApiNetwork.swift */,
-				0348A4C426BE0E4D008C5AD8 /* ApiNextEpisode.swift */,
+				0348A4C426BE0E4D008C5AD8 /* ApiLink.swift */,
 				0348A4C526BE0E4D008C5AD8 /* ApiRating.swift */,
 				0348A4C826BE0E4D008C5AD8 /* ApiSchedule.swift */,
 				0398BEE326BB9CC800F7B9D2 /* ApiShow.swift */,
@@ -582,7 +946,7 @@
 				0348A4D426BE100C008C5AD8 /* Image.swift */,
 				0348A4D926BE100D008C5AD8 /* Links.swift */,
 				0348A4D726BE100D008C5AD8 /* Network.swift */,
-				0348A4D826BE100D008C5AD8 /* NextEpisode.swift */,
+				0348A4D826BE100D008C5AD8 /* Link.swift */,
 				0348A4D226BE100C008C5AD8 /* Rating.swift */,
 				0348A4D326BE100C008C5AD8 /* Schedule.swift */,
 				0398BEDD26BB9AB600F7B9D2 /* Show.swift */,
@@ -740,6 +1104,8 @@
 				036FA7FB26BB86BF005E1069 /* Extension */,
 				03CA565726BB6BA600DD8681 /* Shared */,
 				03E19EB926BB268600725055 /* BaseAlert */,
+				030AFAB826C0760300C64344 /* Home */,
+				030AFAC126C0784B00C64344 /* People */,
 				03E19EA126BB22F700725055 /* Shows */,
 				03E19EA426BB234700725055 /* Welcome */,
 				036FA7EE26BB7DE0005E1069 /* Localizable */,
@@ -1005,10 +1371,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030AFAFB26C079BF00C64344 /* PersonDetailHeaderView.xib in Resources */,
+				030AFAF626C079BF00C64344 /* PeopleListTableViewCell.xib in Resources */,
 				030AFA8726BEE06300C64344 /* ShowEpisodeViewController.xib in Resources */,
 				03E19E7B26BB216000725055 /* LaunchScreen.storyboard in Resources */,
 				036FA7FA26BB828F005E1069 /* WelcomeViewController.xib in Resources */,
+				030AFAFC26C079BF00C64344 /* PersonDetailTableViewCell.xib in Resources */,
 				036FA7F826BB8159005E1069 /* Localizable.strings in Resources */,
+				030AFAFD26C079BF00C64344 /* PersonDetailViewController.xib in Resources */,
 				0398BEBC26BB936600F7B9D2 /* ShowsListTableViewCell.xib in Resources */,
 				03CA570A26BB7A2500DD8681 /* swiftgen.yml in Resources */,
 				030E8E4726BE380300CF6CD5 /* ShowDetailHeaderView.xib in Resources */,
@@ -1019,6 +1389,7 @@
 				0313360226BE1FC0008E1D6E /* ShowDetailViewController.xib in Resources */,
 				0398BEB826BB92ED00F7B9D2 /* ShowsListViewController.xib in Resources */,
 				035B4A9426BEDB9A0061D6F5 /* ShowDetailTableViewCell.xib in Resources */,
+				030AFAF526C079BF00C64344 /* PeopleListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1140,9 +1511,14 @@
 				0398BED426BB9A0100F7B9D2 /* AnyClosureUseCase.swift in Sources */,
 				03E19EAD26BB23D400725055 /* WelcomeModule.swift in Sources */,
 				0348A4DB26BE100D008C5AD8 /* Schedule.swift in Sources */,
+				037E036C26C08C28003AF5E4 /* HomeTabBarViewModel.swift in Sources */,
 				03E19EC726BB27F400725055 /* BaseAlertViewController.swift in Sources */,
+				037E039326C09B98003AF5E4 /* GetPersonCrewUseCase.swift in Sources */,
 				03D3DE2F26BDF85B0098C4F9 /* ApiResult+Extension.swift in Sources */,
 				0348A4EC26BE10AB008C5AD8 /* UiExternals.swift in Sources */,
+				030AFAF326C079BF00C64344 /* PeopleListViewModel.swift in Sources */,
+				037E038126C096D5003AF5E4 /* Embedded.swift in Sources */,
+				030AFAFE26C079BF00C64344 /* PersonDetailViewController.swift in Sources */,
 				0398BEF226BBA02800F7B9D2 /* ParameterNetworkEncoder.swift in Sources */,
 				030AFAA326BEEED200C64344 /* UpdateShowAsFavoriteUseCase.swift in Sources */,
 				03CA565026BB69E500DD8681 /* BaseViewModel.swift in Sources */,
@@ -1150,9 +1526,11 @@
 				035B4A9326BEDB9A0061D6F5 /* ShowDetailTableViewCell.swift in Sources */,
 				0398BED226BB992400F7B9D2 /* ApiResult.swift in Sources */,
 				030AFA9426BEE11300C64344 /* ShowEpisodeViewModel.swift in Sources */,
+				030AFB0E26C07A1800C64344 /* PeopleDataMapper.swift in Sources */,
 				0398BEFC26BBA1F600F7B9D2 /* NetworkDataDecoderImpl.swift in Sources */,
 				03E19EC126BB277300725055 /* ViewPresentationType.swift in Sources */,
 				0348A4F126BE10AB008C5AD8 /* UiRating.swift in Sources */,
+				030AFB0826C079BF00C64344 /* PeopleDataSource.swift in Sources */,
 				03CA564E26BB69B200DD8681 /* ShowsListViewModel.swift in Sources */,
 				0398BEC026BB93A400F7B9D2 /* BaseTableViewCell.swift in Sources */,
 				0398BED026BB98B900F7B9D2 /* ClosureUseCase.swift in Sources */,
@@ -1163,88 +1541,126 @@
 				030E8E4F26BE40E800CF6CD5 /* UiEpisode.swift in Sources */,
 				0398BEE026BB9C7B00F7B9D2 /* ShowsRemoteDataSource.swift in Sources */,
 				0348A4E126BE100D008C5AD8 /* Links.swift in Sources */,
+				030AFAF226C079BF00C64344 /* GetPeopleUseCase.swift in Sources */,
+				037E037B26C09576003AF5E4 /* ApiEmbeddedShow.swift in Sources */,
+				037E039226C09B98003AF5E4 /* GetPersonCastUseCase.swift in Sources */,
+				037E038E26C09744003AF5E4 /* UiiEmbedded.swift in Sources */,
 				03CA565B26BB6BE900DD8681 /* ErrorType.swift in Sources */,
 				03E19EB826BB258100725055 /* Coordinator.swift in Sources */,
 				03E19EA026BB22CB00725055 /* Injection.swift in Sources */,
 				0313360626BE2463008E1D6E /* ShowDetailViewArgs.swift in Sources */,
 				0313360026BE1F92008E1D6E /* ShowDetailViewController.swift in Sources */,
 				0348A4ED26BE10AB008C5AD8 /* UiShow.swift in Sources */,
-				0348A4E026BE100D008C5AD8 /* NextEpisode.swift in Sources */,
+				0348A4E026BE100D008C5AD8 /* Link.swift in Sources */,
 				0398BEDB26BB9A7800F7B9D2 /* ShowsDataSource.swift in Sources */,
 				03CA564B26BB697900DD8681 /* ShowsModule.swift in Sources */,
 				0348A4D126BE0ED4008C5AD8 /* ApiNetwork.swift in Sources */,
+				030AFB1E26C0833900C64344 /* PersonDetailViewArgs.swift in Sources */,
+				030AFB0926C079BF00C64344 /* PeopleRepository.swift in Sources */,
 				03CA564726BB5D2700DD8681 /* BaseViewController.swift in Sources */,
+				037E037126C08EF2003AF5E4 /* GetPersonUseCase.swift in Sources */,
+				030AFAF726C079BF00C64344 /* PeopleListTableViewCell.swift in Sources */,
+				030AFB1426C07AB700C64344 /* UiPerson.swift in Sources */,
+				037E038426C096D5003AF5E4 /* Cast.swift in Sources */,
+				030AFB0326C079BF00C64344 /* PeopleCoordinator.swift in Sources */,
 				03CA570E26BB7B5C00DD8681 /* XCAssets+Generated.swift in Sources */,
+				030AFB0D26C07A1800C64344 /* PeopleDataMapperImpl.swift in Sources */,
 				0348A4DC26BE100D008C5AD8 /* Image.swift in Sources */,
 				03E19EBD26BB26E300725055 /* BaseAlertViewArgs.swift in Sources */,
 				0398BEB626BB903700F7B9D2 /* ShowsCoordinator.swift in Sources */,
 				0348A4DD26BE100D008C5AD8 /* Country.swift in Sources */,
 				0398BEEE26BB9E2400F7B9D2 /* NetworkManagerImpl.swift in Sources */,
 				030AFAAD26BEF6A200C64344 /* UserDefaultsLocalStorage.swift in Sources */,
-				0348A4CB26BE0E4D008C5AD8 /* ApiNextEpisode.swift in Sources */,
+				0348A4CB26BE0E4D008C5AD8 /* ApiLink.swift in Sources */,
 				03CA570D26BB7B5C00DD8681 /* Strings.swift in Sources */,
+				030AFAFF26C079BF00C64344 /* PersonDetailSectionHeaderView.swift in Sources */,
 				030E8E5326BE421A00CF6CD5 /* ApiEpisode.swift in Sources */,
 				030E8E4B26BE402500CF6CD5 /* GetSeasonsUseCase.swift in Sources */,
 				0348A4F326BE10AB008C5AD8 /* UiImage.swift in Sources */,
+				030AFABC26C0763B00C64344 /* HomeTabBarController.swift in Sources */,
 				0348A4C926BE0E4D008C5AD8 /* ApiExternals.swift in Sources */,
 				0398BEF726BBA08C00F7B9D2 /* NetworkSessionImpl.swift in Sources */,
 				030E8E4326BE320E00CF6CD5 /* String+Extension.swift in Sources */,
+				037E037326C09485003AF5E4 /* ApiCast.swift in Sources */,
 				0348A4CA26BE0E4D008C5AD8 /* ApiCountry.swift in Sources */,
 				0398BEEC26BB9E0100F7B9D2 /* HTTPNetworkMethod.swift in Sources */,
+				030AFB0526C079BF00C64344 /* PeopleRemoteDataSourceImpl.swift in Sources */,
 				03E19EB026BB242500725055 /* WelcomeCoordinator.swift in Sources */,
 				030E8E4626BE380300CF6CD5 /* ShowDetailHeaderView.swift in Sources */,
-				0348A4EE26BE10AB008C5AD8 /* UiNextEpisode.swift in Sources */,
+				030AFAC026C0772400C64344 /* HomeModule.swift in Sources */,
+				030AFB1826C07DAC00C64344 /* ApiPerson.swift in Sources */,
+				0348A4EE26BE10AB008C5AD8 /* UiLink.swift in Sources */,
 				03E19E6F26BB215E00725055 /* AppDelegate.swift in Sources */,
+				030AFB1226C07A5600C64344 /* PeopleDomainMapperImpl.swift in Sources */,
 				030AFAB726C0298D00C64344 /* LoaderBuffer.swift in Sources */,
 				030AFAA126BEEEC000C64344 /* GetFavoritesUseCase.swift in Sources */,
 				0398BEF526BBA05500F7B9D2 /* NetworkSession.swift in Sources */,
 				0398BF0426BBA53600F7B9D2 /* ShowsDataMapper.swift in Sources */,
+				037E038526C096D5003AF5E4 /* PersonCrewLinks.swift in Sources */,
 				0313360426BE2374008E1D6E /* ShowDetailViewModel.swift in Sources */,
 				0348A4F026BE10AB008C5AD8 /* UiCountry.swift in Sources */,
 				0348A4CF26BE0E4D008C5AD8 /* ApiSchedule.swift in Sources */,
 				036FA7FF26BB87E9005E1069 /* TextSize.swift in Sources */,
 				0398BEDE26BB9AB600F7B9D2 /* Show.swift in Sources */,
+				030AFB1126C07A5600C64344 /* PeopleDomainMapper.swift in Sources */,
 				030AFAB626C0298D00C64344 /* LoaderView.swift in Sources */,
 				0348A4DE26BE100D008C5AD8 /* Externals.swift in Sources */,
 				030AFA9826BEE9FB00C64344 /* ShowsLocalDataSourceImpl.swift in Sources */,
 				030AFA9E26BEEB1000C64344 /* KeychainKeys.swift in Sources */,
 				030AFAB426C0298D00C64344 /* Loader.swift in Sources */,
+				037E038226C096D5003AF5E4 /* Crew.swift in Sources */,
 				0348A4CE26BE0E4D008C5AD8 /* ApiImage.swift in Sources */,
-				036FA7FD26BB86CF005E1069 /* UIButton+Extension.swift in Sources */,
 				0398BED926BB9A6E00F7B9D2 /* ShowsRepository.swift in Sources */,
+				037E038B26C09744003AF5E4 /* UiCharacter.swift in Sources */,
+				037E036F26C08C74003AF5E4 /* TabBarItemType.swift in Sources */,
 				03CA565D26BB6C2B00DD8681 /* ApiError.swift in Sources */,
+				037E037526C0949A003AF5E4 /* ApiCrew.swift in Sources */,
 				0348A4F226BE10AB008C5AD8 /* UiSchedule.swift in Sources */,
 				0398BEBE26BB938600F7B9D2 /* Reusable.swift in Sources */,
+				037E038C26C09744003AF5E4 /* UiCast.swift in Sources */,
 				03CA565626BB6A6B00DD8681 /* DisplayableErrorType.swift in Sources */,
 				030AFAAB26BEF4FF00C64344 /* UserDefaultsLocalStorageImpl.swift in Sources */,
+				030AFAFA26C079BF00C64344 /* PersonDetailTableViewCell.swift in Sources */,
 				0348A4DF26BE100D008C5AD8 /* Network.swift in Sources */,
 				0398BEBB26BB936600F7B9D2 /* ShowsListTableViewCell.swift in Sources */,
+				037E038D26C09744003AF5E4 /* UiPersonCrewLinks.swift in Sources */,
 				03E19EBF26BB271D00725055 /* BaseAlertViewContentArgs.swift in Sources */,
 				0348A4EB26BE10AB008C5AD8 /* UiLinks.swift in Sources */,
+				037E037926C09557003AF5E4 /* ApiCharacter.swift in Sources */,
 				0398BEFB26BBA1F600F7B9D2 /* NetworkDataDecoder.swift in Sources */,
 				030E8E5126BE41F500CF6CD5 /* Episode.swift in Sources */,
+				030AFB0A26C079BF00C64344 /* PeopleModule.swift in Sources */,
 				03CA565F26BB6C7E00DD8681 /* WelcomeViewModel.swift in Sources */,
 				0398BEFF26BBA3B400F7B9D2 /* ShowsDomainMapper.swift in Sources */,
 				0348A4DA26BE100D008C5AD8 /* Rating.swift in Sources */,
 				030AFA8626BEE06300C64344 /* ShowEpisodeViewController.swift in Sources */,
 				0398BEF026BB9EEA00F7B9D2 /* ServerConstants.swift in Sources */,
+				030AFAF426C079BF00C64344 /* PeopleListViewController.swift in Sources */,
 				0348A4CD26BE0E4D008C5AD8 /* ApiLinks.swift in Sources */,
 				0398BECD26BB985A00F7B9D2 /* GetShowsUseCase.swift in Sources */,
 				035B4A9026BED4210061D6F5 /* ShowDetailSectionHeaderView.swift in Sources */,
 				0398BEE226BB9C8700F7B9D2 /* ShowsRemoteDataSourceImpl.swift in Sources */,
+				037E038326C096D5003AF5E4 /* Character.swift in Sources */,
 				0398BEE426BB9CC800F7B9D2 /* ApiShow.swift in Sources */,
 				0348A4EF26BE10AB008C5AD8 /* UiNetwork.swift in Sources */,
+				030AFAF826C079BF00C64344 /* PersonDetailViewModel.swift in Sources */,
 				03E19EA926BB238000725055 /* WelcomeViewController.swift in Sources */,
 				030AFA9F26BEEB1000C64344 /* KeychainLocalStorageImpl.swift in Sources */,
 				0398BF0626BBA55C00F7B9D2 /* ShowsDataMapperImpl.swift in Sources */,
 				0398BEC926BB973300F7B9D2 /* UITableViewCell+Extension.swift in Sources */,
 				0348A4CC26BE0E4D008C5AD8 /* ApiRating.swift in Sources */,
+				030AFB1626C07D6E00C64344 /* Person.swift in Sources */,
 				030AFAA526BEEF5400C64344 /* UseCase.swift in Sources */,
 				0398BF0126BBA40F00F7B9D2 /* ShowsDomainMapperImpl.swift in Sources */,
+				037E037726C09512003AF5E4 /* ApiPersonCrewLinks.swift in Sources */,
 				0398BEC426BB959F00F7B9D2 /* SDWebImage+Extension.swift in Sources */,
 				03D3DE3526BE045D0098C4F9 /* NetworkModule.swift in Sources */,
+				030AFAF926C079BF00C64344 /* PersonDetailHeaderView.swift in Sources */,
+				030AFB1A26C07E3000C64344 /* PersonViewArgs.swift in Sources */,
+				037E038F26C09744003AF5E4 /* UiCrew.swift in Sources */,
 				03E19EA326BB231000725055 /* MainModule.swift in Sources */,
 				030AFA8326BEE02500C64344 /* ShowEpisodeViewArgs.swift in Sources */,
+				030AFB0426C079BF00C64344 /* PeopleRemoteDataSource.swift in Sources */,
 				030AFAA726BEF02400C64344 /* AnyUseCase.swift in Sources */,
 				03E19EB426BB254100725055 /* ShowsListViewController.swift in Sources */,
 			);

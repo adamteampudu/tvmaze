@@ -1,5 +1,5 @@
 //
-//  UiNextEpisode.swift
+//  Link.swift
 //  TVMaze
 //
 //  Created by Adam Teale on 06-08-21.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct UiNextEpisode: Decodable, Equatable {
+struct Link: Decodable, Equatable {
     let href: String?
 }

@@ -11,9 +11,24 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
 
     private enum Constants {
         static let rowHeight: CGFloat = 100
+        static let cornerRadius: CGFloat = 5
+        static let borderWidth: CGFloat = 1
     }
 
-    @IBOutlet private var searchView: UIView!
+    @IBOutlet private var searchView: UIView! {
+        didSet {
+            let border = UIView()
+            border.backgroundColor = Asset.Colors.primary.color.withAlphaComponent(0.1)
+            border.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+            border.frame = CGRect(
+                x: 0,
+                y: searchView.frame.size.height - Constants.borderWidth,
+                width: searchView.frame.size.width,
+                height: Constants.borderWidth
+            )
+            searchView.addSubview(border)
+        }
+    }
     @IBOutlet private var searchTextField: UITextField! {
         didSet {
             searchTextField.placeholder = L10n.search
@@ -24,11 +39,33 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
     @IBOutlet private var showAllButton: UIButton! {
         didSet {
             showAllButton.setTitle(L10n.showAll, for: .normal)
+            showAllButton.setTitleColor(Asset.Colors.primaryText.color, for: .normal)
+            showAllButton.setTitleColor(Asset.Colors.highlight  .color, for: .selected)
+            showAllButton.backgroundColor = Asset.Colors.primary.color
+            showAllButton.layer.cornerRadius = Constants.cornerRadius
         }
     }
     @IBOutlet private var showFavoritesButton: UIButton! {
         didSet {
             showFavoritesButton.setTitle(L10n.showFavorites, for: .normal)
+            showFavoritesButton.setTitleColor(Asset.Colors.primaryText.color, for: .normal)
+            showFavoritesButton.setTitleColor(Asset.Colors.highlight.color, for: .selected)
+            showFavoritesButton.backgroundColor = Asset.Colors.primary.color
+            showFavoritesButton.layer.cornerRadius = Constants.cornerRadius
+        }
+    }
+    @IBOutlet private var bottomView: UIView! {
+        didSet {
+            let border = UIView()
+            border.backgroundColor = Asset.Colors.primary.color.withAlphaComponent(0.1)
+            border.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
+            border.frame = CGRect(
+                x: 0,
+                y: 0,
+                width: bottomView.frame.size.width,
+                height: Constants.borderWidth
+            )
+            bottomView.addSubview(border)
         }
     }
 
@@ -56,6 +93,7 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
 
     private func setupUI() {
         title = L10n.shows
+        tabBarController?.title = L10n.shows
         setupTableView()
     }
 
@@ -73,8 +111,8 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
         subscribe(observable: viewModel.reloadViewWithFavoritesPublishObservable) { [weak self] showFavorites in
             guard let self = self else { return }
             self.tableView.reloadData()
-            self.showAllButton.isEnabled = showFavorites
-            self.showFavoritesButton.isEnabled = !showFavorites
+            self.showAllButton.isSelected = !showFavorites
+            self.showFavoritesButton.isSelected = showFavorites
         }
 
         subscribe(observable: viewModel.goToScenePublishObservable) { [weak self] goToScene in
@@ -87,7 +125,8 @@ class ShowsListViewController: BaseViewController<ShowsListViewModel, ShowsCoord
             .withLatestFrom(searchTextField.rx.text.orEmpty)
             .subscribe(onNext: { [weak self] searchTerm in
                 self?.viewModel.onFilterResults(text: searchTerm)
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
     }
 
     @IBAction func showAll(_ sender: Any) {

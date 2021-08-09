@@ -22,6 +22,8 @@ internal enum L10n {
   internal static let episodes = L10n.tr("Localizable", "episodes")
   /// OK
   internal static let ok = L10n.tr("Localizable", "ok")
+  /// People
+  internal static let people = L10n.tr("Localizable", "people")
   /// Rate your favorites
   internal static let rateYourFavorites = L10n.tr("Localizable", "rate_your_favorites")
   /// Remove from favorites
