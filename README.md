@@ -3,7 +3,7 @@
 TVMaze is an iOS 13+ application that lists TV series using the API provided by the TVMaze website. 
 The project demonstrates the use of MVVM (UIKit + RXSwift) + Clean architecture.
 
-I have reused a couple of important base classes and concepts that I have picked up from colleagues over the last few years - their names are still visible in the corresponding files.
+I have reused a couple of important base classes and concepts that I have picked up from colleagues over the last few years - their names are still visible in the corresponding files. Thanks to Nicolás García, Giomar Rodriguez, Daniel Santamaria and Franco Cadillo.
 
 ## Requirements
 
